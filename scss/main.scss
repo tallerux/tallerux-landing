@@ -1,0 +1,44 @@
+@import "../lib/bower-bourbon/bourbon";
+@import "../lib/bower-neat/neat";
+@import "../lib/normalize-css/normalize.css";
+
+
+html{
+    font: 1em/1.5 "Source Sans Pro", sans-serif;
+    font-weight: 200;
+}
+
+header {
+	background: url(../img/blackboard.jpg) center center;
+	color: #fff;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+
+	.tagline {
+		display: inline-block;
+		border: 1px solid #fff;
+		border-width: 1px 0;
+		height: 3rem;
+		line-height: 3rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+strong {
+	font-weight: 400;
+}
+
+.lead {
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.logo {
+	height: 4rem;
+	vertical-align: baseline;
+}
+
+section {
+}

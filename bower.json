@@ -1,0 +1,17 @@
+{
+  "name": "tallerux-landing",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tallerux/tallerux-landing",
+  "authors": [
+    "Jorge Martinez <jorge.manu87@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}

@@ -1,0 +1,318 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5595,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/main.scss",
+			"settings":
+			{
+				"buffer_size": 670,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"selected_items":
+		[
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jito/taller-ux/index.html",
+		"/Users/jito/Documents/tallerux-landing/bower.json",
+		"/Users/jito/Documents/tallerux-landing/.bowerrc",
+		"/Users/jito/zauber/steelcase-tickertape/bower.json",
+		"/Users/jito/zauber/steelcase-tickertape/package.json",
+		"/Users/jito/zauber/steelcase-tickertape/Gruntfile.js",
+		"/Users/jito/Dropbox/Taller UX/taller-ux/.bowerrc",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/what-we-do.css.scss",
+		"/Users/jito/zauber/zauber-site/app/views/home/index.html.haml",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_clients.scss",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_home.scss",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_footer.scss",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_about.scss",
+		"/Users/jito/zauber/zauber-site/app/views/home/about.html.haml",
+		"/Users/jito/zauber/zauber-site/app/views/home/_products.html.haml",
+		"/Users/jito/zauber/zauber-site/app/views/home/_footer.html.haml",
+		"/Users/jito/zauber/zauber-site/app/views/home/our-products.html.haml",
+		"/Users/jito/zauber/zauber-site/app/views/home/_featured-clients.html.haml",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_layout.scss",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_header.scss",
+		"/Users/jito/zauber/zauber-site/app/views/home/_header.html.haml",
+		"/Users/jito/zauber/zauber-site/app/views/layouts/application.html.haml",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/_variables.scss",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/header.css.scss",
+		"/Users/jito/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jito/zauber/zauber-site/app/assets/stylesheets/footer.css.scss"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/jito/zauber/zauber-site/app/assets/stylesheets",
+			"/Users/jito/zauber/zauber-site/app/views",
+			"/Users/jito/zauber/zauber-site/app/assets/stylesheets",
+			"/Users/jito/zauber/zauber-site/app/views",
+			"/Users/jito/zauber/zauber-site/app/assets/stylesheets",
+			"/Users/jito/zauber/zauber-site/app/views",
+			"/Users/jito/zauber/zauber-site/app/assets/stylesheets"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"view-products",
+			"view-content",
+			"clients",
+			"box",
+			"detailSlider",
+			"slider",
+			"howContact",
+			"highlight",
+			"view-highlights",
+			"region-sidebar-first",
+			"page-wrapper",
+			"#page",
+			"footer",
+			"section",
+			"direction",
+			"infoContent",
+			"contact-from-site",
+			"navigation",
+			"centerR",
+			"red",
+			"import"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								752
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "scss/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								602,
+								602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
