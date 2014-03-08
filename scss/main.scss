@@ -77,12 +77,19 @@ strong {
 		@extend .main-title;
 	}
 
+	.reason {
+		position: relative;
+		padding: 60px 0;
+		@include shift(1);
+		@include span-columns(10);
+	}
+
 	.reason:nth-child(even) {
-		@include shift(4);
+		padding-left: 215px;
 	}
 
 	.reason:nth-child(odd) {
-		/* @include span-columns(8); */
+		padding-right: 215px;
 	}
 
 	h3 {
@@ -91,6 +98,44 @@ strong {
 
 	p {
 		@extend .chunk-copy
+	}
+
+	.reason:before {
+		position: absolute;
+		content:'';
+		background: url(../img/taller-icon-sprite.svg) top left;
+	}
+
+	@mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
+		background-position: $pos-left $pos-top;
+		width: $width;
+		height: $height;
+		top: $top;
+	}
+
+	.reason-start:before {
+		@include sprite-position(0,0,152px,183px,65px);
+		left: 0;
+	}
+
+	.reason-fly:before {
+		@include sprite-position(0,-420px,436px,285px,75px);
+		right: 0;
+	}
+
+	.reason-minimal:before {
+		@include sprite-position(0,-218px,165px,158px,90px);
+		left: 0;
+	}
+
+	.reason-cc:before {
+		@include sprite-position(-173px,0,247px,249px,80px);
+		right: 0;
+	}
+
+	.reason-community:before {
+		@include sprite-position(-206px,-273px,191px,147px,120px);
+		left: 0;
 	}
 
 }

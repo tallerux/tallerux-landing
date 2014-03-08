@@ -78,11 +78,63 @@ strong {
   float: left;
 }
 
+.properties .reason {
+  position: relative;
+  padding: 60px 0;
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.properties .reason:last-child {
+  margin-right: 0;
+}
 .properties .reason:nth-child(even) {
-  margin-left: 34.11922%;
+  padding-left: 215px;
 }
 .properties .reason:nth-child(odd) {
-  /* @include span-columns(8); */
+  padding-right: 215px;
+}
+.properties .reason:before {
+  position: absolute;
+  content: '';
+  background: url(../img/taller-icon-sprite.svg) top left;
+}
+.properties .reason-start:before {
+  background-position: 0 0;
+  width: 152px;
+  height: 183px;
+  top: 65px;
+  left: 0;
+}
+.properties .reason-fly:before {
+  background-position: 0 -420px;
+  width: 436px;
+  height: 285px;
+  top: 75px;
+  right: 0;
+}
+.properties .reason-minimal:before {
+  background-position: 0 -218px;
+  width: 165px;
+  height: 158px;
+  top: 90px;
+  left: 0;
+}
+.properties .reason-cc:before {
+  background-position: -173px 0;
+  width: 247px;
+  height: 249px;
+  top: 80px;
+  right: 0;
+}
+.properties .reason-community:before {
+  background-position: -206px -273px;
+  width: 191px;
+  height: 147px;
+  top: 120px;
+  left: 0;
 }
 
 .showcase {
