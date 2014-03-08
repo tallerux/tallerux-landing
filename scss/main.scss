@@ -1,3 +1,8 @@
+// $visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: back;
+$visual-grid-opacity: 0.1;
+
 @import "../lib/bower-bourbon/bourbon";
 @import "../lib/bower-neat/neat";
 @import "../lib/normalize-css/normalize.css";
@@ -16,18 +21,23 @@ html{
 header {
 	background: url(../img/blackboard.jpg) center center;
 	color: #fff;
-	text-align: center;
 	padding-top: 4rem;
-	padding-bottom: 3rem;
+	padding-bottom: 2rem;
 
 	.tagline {
 		display: inline-block;
+		margin: 1em 0;
 		border: 1px solid #fff;
 		border-width: 1px 0;
 		height: 3rem;
 		line-height: 3rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		float: right;
+	}
+
+	.lead {
+		margin: 4rem auto;
 	}
 }
 
@@ -38,12 +48,17 @@ header {
 
 /* main typography elements */
 .main-title {
-	border: 3px solid $black;
+	margin: 4rem 0;
+	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 14px;
-	padding: 10px;
-	display: inline-block;
+
+	span {
+		display: inline-block;
+		padding: 10px;	
+		border: 3px solid $black;
+	}
 }
 
 .chunk-title {
@@ -62,12 +77,12 @@ strong {
 .lead {
 	font-size: 1.5em;
 	font-weight: 100;
+	text-align: center;
 }
 
 .logo {
-	height: 4rem;
+	height: 5rem;
 	vertical-align: baseline;
-	float: left;
 }
 
 .properties{ 
@@ -79,17 +94,18 @@ strong {
 
 	.reason {
 		position: relative;
-		padding: 60px 0;
-		@include shift(1);
-		@include span-columns(10);
+		margin-bottom: 6rem;
+		@include shift(3);
+		@include span-columns(8);
 	}
 
-	.reason:nth-child(even) {
-		padding-left: 215px;
+	.reason:first-of-type {
+		padding-top: 0;
 	}
 
 	.reason:nth-child(odd) {
-		padding-right: 215px;
+		// padding-right: 215px;
+		@include shift(1);
 	}
 
 	h3 {
@@ -114,28 +130,28 @@ strong {
 	}
 
 	.reason-start:before {
-		@include sprite-position(0,0,152px,183px,65px);
-		left: 0;
+		@include sprite-position(0,0,152px,183px,10px);
+		left: -180px;
 	}
 
 	.reason-fly:before {
-		@include sprite-position(0,-420px,436px,285px,75px);
-		right: 0;
+		@include sprite-position(0,-420px,436px,285px,20px);
+		right: -190px;
 	}
 
 	.reason-minimal:before {
-		@include sprite-position(0,-218px,165px,158px,90px);
-		left: 0;
+		@include sprite-position(0,-218px,165px,158px,30px);
+		left: -190px;
 	}
 
 	.reason-cc:before {
-		@include sprite-position(-173px,0,247px,249px,80px);
-		right: 0;
+		@include sprite-position(-173px,0,247px,249px,0);
+		right: -230px;
 	}
 
 	.reason-community:before {
-		@include sprite-position(-206px,-273px,191px,147px,120px);
-		left: 0;
+		@include sprite-position(-206px,-273px,191px,147px,50px);
+		left: -220px;
 	}
 
 }
@@ -152,18 +168,27 @@ strong {
 		@extend .main-title;
 	}
 
+	.lead {
+		@include span-columns(10);
+		@include shift(1);
+		margin-top: 0;
+	}
 
 	.moments {
+		margin-top: 2rem;
 		padding: 0;
 		counter-reset: list-counter;
+		@include span-columns(12);
 	}
 
 	li {
-		@include span-columns(6);
-		padding-right: 8rem;
+		@include span-columns(4);
+		@include shift(1);
+		@include omega(2n);
 
-		&:nth-child(2) {
-			@include omega();
+		&:nth-child(2n) {
+		@include shift(2);
+			
 		}
 
 		&:before {
@@ -185,6 +210,17 @@ strong {
 	.moments p {
 		@extend .chunk-copy;
 		margin: 0 0 5rem;
+	}
+}
+
+
+form {
+	input {
+		font-size: 1.5em;
+		border: 2px solid $green;
+		height: 2em;
+		line-height: 2em;
+		padding: 0 .4em;
 	}
 }
 

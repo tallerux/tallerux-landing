@@ -15,18 +15,22 @@ html {
 header {
   background: url(../img/blackboard.jpg) center center;
   color: #fff;
-  text-align: center;
   padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 header .tagline {
   display: inline-block;
+  margin: 1em 0;
   border: 1px solid #fff;
   border-width: 1px 0;
   height: 3rem;
   line-height: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  float: right;
+}
+header .lead {
+  margin: 4rem auto;
 }
 
 /* layout */
@@ -46,12 +50,16 @@ header .tagline {
 
 /* main typography elements */
 .main-title, .properties h2, .method h2 {
-  border: 3px solid #282627;
+  margin: 4rem 0;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 14px;
-  padding: 10px;
+}
+.main-title span, .properties h2 span, .method h2 span {
   display: inline-block;
+  padding: 10px;
+  border: 3px solid #282627;
 }
 
 .chunk-title, .properties h3, .method h4 {
@@ -70,31 +78,31 @@ strong {
 .lead {
   font-size: 1.5em;
   font-weight: 100;
+  text-align: center;
 }
 
 .logo {
-  height: 4rem;
+  height: 5rem;
   vertical-align: baseline;
-  float: left;
 }
 
 .properties .reason {
   position: relative;
-  padding: 60px 0;
-  margin-left: 8.5298%;
+  margin-bottom: 6rem;
+  margin-left: 25.58941%;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
+  width: 65.88078%;
 }
 .properties .reason:last-child {
   margin-right: 0;
 }
-.properties .reason:nth-child(even) {
-  padding-left: 215px;
+.properties .reason:first-of-type {
+  padding-top: 0;
 }
 .properties .reason:nth-child(odd) {
-  padding-right: 215px;
+  margin-left: 8.5298%;
 }
 .properties .reason:before {
   position: absolute;
@@ -105,36 +113,36 @@ strong {
   background-position: 0 0;
   width: 152px;
   height: 183px;
-  top: 65px;
-  left: 0;
+  top: 10px;
+  left: -180px;
 }
 .properties .reason-fly:before {
   background-position: 0 -420px;
   width: 436px;
   height: 285px;
-  top: 75px;
-  right: 0;
+  top: 20px;
+  right: -190px;
 }
 .properties .reason-minimal:before {
   background-position: 0 -218px;
   width: 165px;
   height: 158px;
-  top: 90px;
-  left: 0;
+  top: 30px;
+  left: -190px;
 }
 .properties .reason-cc:before {
   background-position: -173px 0;
   width: 247px;
   height: 249px;
-  top: 80px;
-  right: 0;
+  top: 0;
+  right: -230px;
 }
 .properties .reason-community:before {
   background-position: -206px -273px;
   width: 191px;
   height: 147px;
-  top: 120px;
-  left: 0;
+  top: 50px;
+  left: -220px;
 }
 
 .showcase {
@@ -142,22 +150,47 @@ strong {
   color: #FFF;
 }
 
+.method .lead {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 0;
+}
+.method .lead:last-child {
+  margin-right: 0;
+}
 .method .moments {
+  margin-top: 2rem;
   padding: 0;
   counter-reset: list-counter;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.method .moments:last-child {
+  margin-right: 0;
 }
 .method li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  padding-right: 8rem;
+  width: 31.76157%;
+  margin-left: 8.5298%;
 }
 .method li:last-child {
   margin-right: 0;
 }
-.method li:nth-child(2) {
+.method li:nth-child(2n) {
   margin-right: 0;
+}
+.method li:nth-child(2n+1) {
+  clear: left;
+}
+.method li:nth-child(2n) {
+  margin-left: 17.05961%;
 }
 .method li:before {
   border-radius: 50%;
@@ -171,6 +204,14 @@ strong {
 }
 .method .moments p {
   margin: 0 0 5rem;
+}
+
+form input {
+  font-size: 1.5em;
+  border: 2px solid #55c3c3;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 .4em;
 }
 
 footer {
