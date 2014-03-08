@@ -2,10 +2,15 @@
 @import "../lib/bower-neat/neat";
 @import "../lib/normalize-css/normalize.css";
 
+/* Variables */
+$green: #55c3c3;
+$black: #282627;
+
 
 html{
     font: 1em/1.5 "Source Sans Pro", sans-serif;
     font-weight: 200;
+    color: $black;
 }
 
 header {
@@ -26,6 +31,22 @@ header {
 	}
 }
 
+/* layout */
+.container {
+	@include outer-container;
+}
+
+/* main typography elements */
+.main-title {
+	border: 3px solid $black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
 strong {
 	font-weight: 400;
 }
@@ -38,8 +59,72 @@ strong {
 .logo {
 	height: 4rem;
 	vertical-align: baseline;
+	float: left;
 }
 
-section {
-	@include outer-container;
+.properties{ 
+	@extend .container;
+
+	h2 {
+		@extend .main-title;
+	}
+
+}
+
+.showcase {
+	background-color: $green;
+	color: #FFF;
+}
+
+.method {
+	@extend .container;
+
+	h2 {
+		@extend .main-title;
+	}
+
+
+	.moments {
+		padding: 0;
+		counter-reset: list-counter;
+	}
+
+	li {
+		@include span-columns(6);
+		padding-right: 8rem;
+
+		&:nth-child(2) {
+			@include omega();
+		}
+
+		&:before {
+			border-radius: 50%;
+			content: counter(list-counter);
+			counter-increment: list-counter;
+			padding: 0.7rem 1.5rem;
+			font-size: 2rem;
+			font-weight: bold;
+			background-color: $green;
+			color: #FFF;
+		}
+	}
+
+	h4 {
+		font-size: 24px;
+		margin: 0.8rem 0 0;
+	}
+
+	.moments p {
+		font-size: 22px;
+		line-height: 1.27;
+		margin: 0 0 5rem;
+	}
+}
+
+
+footer {
+	margin-top: 2rem;
+	padding: 1rem 0 2rem;
+	background: url(../img/blackboard.jpg) center bottom;
+	color: #FFF;
 }
