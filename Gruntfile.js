@@ -39,19 +39,19 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style: 'expanded',
-          compass: true
+          compass: false
         },
         files: {
-          '/css/main.css': '<%= project.css %>'
+          'css/main.css': 'scss/main.scss'
         }
       },
       dist: {
         options: {
           style: 'compressed',
-          compass: true
+          compass: false
         },
         files: {
-          '/css/main.css': '<%= project.css %>'
+          'css/main.css': 'scss/main.scss'
         }
       }
     },
@@ -75,6 +75,6 @@ module.exports = function(grunt) {
  
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 };

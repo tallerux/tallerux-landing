@@ -41,4 +41,5 @@ strong {
 }
 
 section {
+	@include outer-container;
 }
