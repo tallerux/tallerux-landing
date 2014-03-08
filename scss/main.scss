@@ -44,7 +44,15 @@ header {
 	font-size: 14px;
 	padding: 10px;
 	display: inline-block;
-	text-align: center;
+}
+
+.chunk-title {
+	font-size: 24px;
+	margin: 0.8rem 0 0;
+}
+
+.chunk-copy {
+	font-size: 22px;
 }
 
 strong {
@@ -67,6 +75,22 @@ strong {
 
 	h2 {
 		@extend .main-title;
+	}
+
+	.reason:nth-child(even) {
+		@include shift(4);
+	}
+
+	.reason:nth-child(odd) {
+		/* @include span-columns(8); */
+	}
+
+	h3 {
+		@extend .chunk-title;
+	}
+
+	p {
+		@extend .chunk-copy
 	}
 
 }
@@ -110,13 +134,11 @@ strong {
 	}
 
 	h4 {
-		font-size: 24px;
-		margin: 0.8rem 0 0;
+		@extend .chunk-title
 	}
 
 	.moments p {
-		font-size: 22px;
-		line-height: 1.27;
+		@extend .chunk-copy;
 		margin: 0 0 5rem;
 	}
 }

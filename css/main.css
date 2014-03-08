@@ -52,7 +52,15 @@ header .tagline {
   font-size: 14px;
   padding: 10px;
   display: inline-block;
-  text-align: center;
+}
+
+.chunk-title, .properties h3, .method h4 {
+  font-size: 24px;
+  margin: 0.8rem 0 0;
+}
+
+.chunk-copy, .properties p, .method .moments p {
+  font-size: 22px;
 }
 
 strong {
@@ -68,6 +76,13 @@ strong {
   height: 4rem;
   vertical-align: baseline;
   float: left;
+}
+
+.properties .reason:nth-child(even) {
+  margin-left: 34.11922%;
+}
+.properties .reason:nth-child(odd) {
+  /* @include span-columns(8); */
 }
 
 .showcase {
@@ -102,13 +117,7 @@ strong {
   background-color: #55c3c3;
   color: #FFF;
 }
-.method h4 {
-  font-size: 24px;
-  margin: 0.8rem 0 0;
-}
 .method .moments p {
-  font-size: 22px;
-  line-height: 1.27;
   margin: 0 0 5rem;
 }
 
