@@ -7,7 +7,7 @@
 
 /* Variables */
 html {
-  font: 1em/1.5 "Source Sans Pro", sans-serif;
+  font: 1em/1.5 "source-sans-pro", sans-serif;
   font-weight: 200;
   color: #282627;
 }
@@ -76,7 +76,8 @@ strong {
 }
 
 .lead {
-  font-size: 1.5em;
+  font-size: 32px;
+  line-height: 1.2;
   font-weight: 100;
   text-align: center;
 }
@@ -88,7 +89,7 @@ strong {
 
 .properties .reason {
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   margin-left: 25.58941%;
   float: left;
   display: block;
@@ -103,6 +104,19 @@ strong {
 }
 .properties .reason:nth-child(odd) {
   margin-left: 8.5298%;
+}
+.properties h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.properties p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.properties small {
+  font-style: italic;
+  font-size: 1rem;
+  color: #676566;
 }
 .properties .reason:before {
   position: absolute;
@@ -122,6 +136,10 @@ strong {
   height: 285px;
   top: 20px;
   right: -190px;
+}
+.properties .reason-fly p,
+.properties .reason-cc p {
+  margin-bottom: 0.4rem;
 }
 .properties .reason-minimal:before {
   background-position: 0 -218px;
@@ -144,10 +162,24 @@ strong {
   top: 50px;
   left: -220px;
 }
+.properties .reason-community h3 {
+  margin-top: 0.4rem;
+}
 
 .showcase {
   background-color: #55c3c3;
   color: #FFF;
+}
+.showcase .container, .showcase .properties, .showcase .method {
+  padding: 5rem 0;
+  background: url(../img/mapa.jpg) no-repeat right bottom;
+}
+.showcase h4 {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .method .lead {
