@@ -179,12 +179,11 @@ strong {
 
 .showcase {
 
-	background-color: $green;
+	background: $green url(../img/mapa.png) no-repeat right bottom;
 	color: #FFF;
 
 	.container {
 		padding: 5rem 0;
-		background: url(../img/mapa.jpg) no-repeat right bottom;
 	}
 
 	h4 {
@@ -193,6 +192,33 @@ strong {
 		letter-spacing: 3px;
 		font-weight: 400;
 		font-size: 0.8rem;
+	}
+
+	.video {
+		float: left;
+	}
+
+	.ediciones {
+		float: left;
+		width: 110px;
+		text-align: center;
+		margin-left: 6rem;
+		margin-top: -0.5rem;
+
+		h5 {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin: 0.5rem 0;
+		}
+
+		.counter {
+			font-size: 3.88em;
+			font-weight: 500;
+			border: 3px solid;
+			border-top-width: 11px;
+			padding: 0 1rem;
+			line-height: 1.2;
+		}
 	}
 
 }
@@ -215,6 +241,7 @@ strong {
 		padding: 0;
 		counter-reset: list-counter;
 		@include span-columns(12);
+		@extend .clearfix;
 	}
 
 	li {
@@ -251,12 +278,28 @@ strong {
 
 
 form {
+	text-align: center;
+	margin-bottom: 4rem;
+
 	input {
 		font-size: 1.5em;
 		border: 2px solid $green;
 		height: 2em;
 		line-height: 2em;
 		padding: 0 .4em;
+	}
+
+	.email {
+		width: 37rem;
+	}
+
+	.send-form {
+		border: none;
+		background-color: #55C3C3;
+		color: #FFF;
+		padding: 0 4rem;
+		height: 1.92em;
+		box-shadow: 0 0.1em 0 #339090;
 	}
 }
 

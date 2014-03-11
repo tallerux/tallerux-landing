@@ -167,12 +167,11 @@ strong {
 }
 
 .showcase {
-  background-color: #55c3c3;
+  background: #55c3c3 url(../img/mapa.png) no-repeat right bottom;
   color: #FFF;
 }
 .showcase .container, .showcase .properties, .showcase .method {
   padding: 5rem 0;
-  background: url(../img/mapa.jpg) no-repeat right bottom;
 }
 .showcase h4 {
   margin: 0.5rem 0;
@@ -180,6 +179,29 @@ strong {
   letter-spacing: 3px;
   font-weight: 400;
   font-size: 0.8rem;
+}
+.showcase .video {
+  float: left;
+}
+.showcase .ediciones {
+  float: left;
+  width: 110px;
+  text-align: center;
+  margin-left: 6rem;
+  margin-top: -0.5rem;
+}
+.showcase .ediciones h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0.5rem 0;
+}
+.showcase .ediciones .counter {
+  font-size: 3.88em;
+  font-weight: 500;
+  border: 3px solid;
+  border-top-width: 11px;
+  padding: 0 1rem;
+  line-height: 1.2;
 }
 
 .method .lead {
@@ -238,12 +260,27 @@ strong {
   margin: 0 0 5rem;
 }
 
+form {
+  text-align: center;
+  margin-bottom: 4rem;
+}
 form input {
   font-size: 1.5em;
   border: 2px solid #55c3c3;
   height: 2em;
   line-height: 2em;
   padding: 0 .4em;
+}
+form .email {
+  width: 37rem;
+}
+form .send-form {
+  border: none;
+  background-color: #55C3C3;
+  color: #FFF;
+  padding: 0 4rem;
+  height: 1.92em;
+  box-shadow: 0 0.1em 0 #339090;
 }
 
 footer {
