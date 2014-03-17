@@ -20,7 +20,7 @@ header {
 }
 header .tagline {
   display: inline-block;
-  margin: 1em 0;
+  margin: 3em 0;
   border: 1px solid #fff;
   border-width: 1px 0;
   height: 3rem;
@@ -31,6 +31,14 @@ header .tagline {
 }
 header .lead {
   margin: 4rem auto;
+}
+
+.logo {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 193px;
+  height: 93px;
+  background: url(../img/logo.png) no-repeat;
 }
 
 /* layout */
@@ -83,7 +91,6 @@ strong {
 }
 
 .logo {
-  height: 5rem;
   vertical-align: baseline;
 }
 
