@@ -33,7 +33,7 @@ header .lead {
   margin: 4rem auto;
 }
 
-.logo {
+.logo, footer .logo {
   text-indent: -9999px;
   display: inline-block;
   width: 193px;
@@ -57,14 +57,14 @@ header .lead {
 }
 
 /* main typography elements */
-.main-title, .properties h2, .method h2 {
+.main-title, .properties h2, .method h2, .sponsors h2 {
   margin: 4rem 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 14px;
 }
-.main-title span, .properties h2 span, .method h2 span {
+.main-title span, .properties h2 span, .method h2 span, .sponsors h2 span {
   display: inline-block;
   padding: 10px;
   border: 3px solid #282627;
@@ -90,7 +90,7 @@ strong {
   text-align: center;
 }
 
-.logo {
+.logo, footer .logo {
   vertical-align: baseline;
 }
 
@@ -269,7 +269,7 @@ strong {
 
 form {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 form input {
   font-size: 1.5em;
@@ -290,9 +290,28 @@ form .send-form {
   box-shadow: 0 0.1em 0 #339090;
 }
 
+.sponsors {
+  background: #f2e9e2;
+  margin-bottom: 0;
+}
+.sponsors h2 {
+  font-size: 10px;
+  border-width: 2px;
+  border-color: #676566;
+  color: #676566;
+}
+.sponsors ul {
+  text-align: center;
+}
+.sponsors ul li {
+  display: inline-block;
+}
+
 footer {
-  margin-top: 2rem;
   padding: 1rem 0 2rem;
   background: url(../img/blackboard.jpg) center bottom;
   color: #FFF;
+}
+footer .logo {
+  height: 2rem;
 }

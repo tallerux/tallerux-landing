@@ -9,6 +9,7 @@ $visual-grid-opacity: 0.1;
 
 /* Variables */
 $green: #55c3c3;
+$beige: #f2e9e2;
 $black: #282627;
 $grey: #676566;
 
@@ -286,7 +287,7 @@ strong {
 
 form {
 	text-align: center;
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 
 	input {
 		font-size: 1.5em;
@@ -310,10 +311,34 @@ form {
 	}
 }
 
+.sponsors {
+	background: $beige;
+	margin-bottom: 0;
+
+	h2 {
+		@extend .main-title;
+		font-size: 10px;
+		border-width: 2px;
+		border-color: $grey;
+		color: $grey;
+	}
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
+}
 
 footer {
-	margin-top: 2rem;
+	// margin-top: 2rem;
 	padding: 1rem 0 2rem;
 	background: url(../img/blackboard.jpg) center bottom;
 	color: #FFF;
+
+	.logo {
+		@extend .logo;
+		height: 2rem;
+	}
 }
