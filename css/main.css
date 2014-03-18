@@ -295,16 +295,15 @@ form .send-form {
   margin-bottom: 0;
 }
 .sponsors h2 {
-  font-size: 10px;
+  margin-bottom: 10px;
   border-width: 2px;
-  border-color: #676566;
-  color: #676566;
 }
 .sponsors ul {
   text-align: center;
 }
 .sponsors ul li {
   display: inline-block;
+  margin: 20px 20px;
 }
 
 footer {
