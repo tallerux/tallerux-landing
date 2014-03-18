@@ -341,7 +341,18 @@ footer {
 
 		a {
 			display: inline-block;
-			margin: 0 10px;
+			margin: 20px 30px;
 		}
+	}
+
+	.fb-like,
+	#fb-root,
+	.twitter-follow-button {
+		display: inline-block;
+	}
+
+	.twitter-follow-button {
+		margin-bottom: -8px;
+		margin-top: 20px;
 	}
 }

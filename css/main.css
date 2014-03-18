@@ -317,5 +317,14 @@ footer .badges {
 }
 footer .badges a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 20px 30px;
+}
+footer .fb-like,
+footer #fb-root,
+footer .twitter-follow-button {
+  display: inline-block;
+}
+footer .twitter-follow-button {
+  margin-bottom: -8px;
+  margin-top: 20px;
 }
