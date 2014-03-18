@@ -43,6 +43,10 @@ header {
 	}
 }
 
+section {
+	padding: 5rem 0;
+}
+
 .logo {
 	text-indent: -9999px;
 	display: inline-block;
@@ -58,7 +62,7 @@ header {
 
 /* main typography elements */
 .main-title {
-	margin: 4rem 0;
+	margin: 0 0 4rem;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -95,6 +99,8 @@ strong {
 	vertical-align: baseline;
 }
 
+
+
 .properties{ 
 	@extend .container;
 
@@ -111,6 +117,10 @@ strong {
 
 	.reason:first-of-type {
 		padding-top: 0;
+	}
+
+	.reason:last-of-type {
+		margin-bottom: 0;
 	}
 
 	.reason:nth-child(odd) {
@@ -189,10 +199,6 @@ strong {
 
 	background: $green url(../img/mapa.png) no-repeat right bottom;
 	color: #FFF;
-
-	.container {
-		padding: 5rem 0;
-	}
 
 	h4 {
 		margin: 0.5rem 0;
@@ -284,31 +290,16 @@ strong {
 	}
 }
 
-
-form {
-	text-align: center;
-	margin-bottom: 6rem;
-
-	input {
-		font-size: 1.5em;
-		border: 2px solid $green;
-		height: 2em;
-		line-height: 2em;
-		padding: 0 .4em;
-	}
-
-	.email {
-		width: 37rem;
-	}
-
-	.send-form {
-		border: none;
-		background-color: #55C3C3;
-		color: #FFF;
-		padding: 0 4rem;
-		height: 1.92em;
-		box-shadow: 0 0.1em 0 #339090;
-	}
+.cta {
+	display: inline-block;
+	background-color: #55C3C3;
+	color: #FFF;
+	padding: 0 4rem;
+	margin: .5em 0;
+	height: 1.92em;
+	line-height: 1.92em;
+	box-shadow: 0 0.1em 0 #339090;
+	text-decoration: none;
 }
 
 .sponsors {
