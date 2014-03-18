@@ -332,13 +332,16 @@ form {
 }
 
 footer {
-	// margin-top: 2rem;
-	padding: 1rem 0 2rem;
+	padding: 2rem 0;
 	background: url(../img/blackboard.jpg) center bottom;
 	color: #FFF;
 
-	.logo {
-		@extend .logo;
-		height: 2rem;
+	.badges {
+		float: right;
+
+		a {
+			display: inline-block;
+			margin: 0 10px;
+		}
 	}
 }

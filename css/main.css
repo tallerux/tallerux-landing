@@ -33,7 +33,7 @@ header .lead {
   margin: 4rem auto;
 }
 
-.logo, footer .logo {
+.logo {
   text-indent: -9999px;
   display: inline-block;
   width: 193px;
@@ -90,7 +90,7 @@ strong {
   text-align: center;
 }
 
-.logo, footer .logo {
+.logo {
   vertical-align: baseline;
 }
 
@@ -308,10 +308,14 @@ form .send-form {
 }
 
 footer {
-  padding: 1rem 0 2rem;
+  padding: 2rem 0;
   background: url(../img/blackboard.jpg) center bottom;
   color: #FFF;
 }
-footer .logo {
-  height: 2rem;
+footer .badges {
+  float: right;
+}
+footer .badges a {
+  display: inline-block;
+  margin: 0 10px;
 }
