@@ -294,7 +294,7 @@ strong {
   text-decoration: none;
 }
 
-.ir-logo, .sponsors .logo-interactores, .sponsors .logo-ctic, .sponsors .logo-utn, footer .logo-ixda, footer .logo-cc, footer .logo-hnea {
+.ir-logo, .sponsors .logo-mdi, .sponsors .logo-interactores, .sponsors .logo-ctic, .sponsors .logo-utn, footer .logo-ixda, footer .logo-cc, footer .logo-hnea {
   text-indent: -9999px;
   display: block;
   background: url(../img/logos-sprite.png) no-repeat top left;
@@ -313,7 +313,12 @@ strong {
 }
 .sponsors ul li {
   display: inline-block;
-  margin: 20px 20px;
+  margin: 40px 40px 20px;
+}
+.sponsors .logo-mdi {
+  background-position: 0 -358px;
+  width: 176px;
+  height: 77px;
 }
 .sponsors .logo-interactores {
   background-position: 0 -126px;
@@ -326,9 +331,9 @@ strong {
   height: 87px;
 }
 .sponsors .logo-utn {
-  background-position: 0 -295px;
+  background-position: 0 -292px;
   width: 233px;
-  height: 76px;
+  height: 64px;
 }
 
 footer {

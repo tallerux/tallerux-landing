@@ -329,8 +329,15 @@ strong {
 
 		li {
 			display: inline-block;
-			margin: 20px 20px;
+			margin: 40px 40px 20px;
 		}
+	}
+
+	.logo-mdi {
+		@extend .ir-logo;
+		background-position: 0 -358px;
+		width: 176px;
+		height: 77px;
 	}
 
 	.logo-interactores {
@@ -349,9 +356,9 @@ strong {
 
 	.logo-utn {
 		@extend .ir-logo;
-		background-position: 0 -295px;
+		background-position: 0 -292px;
 		width: 233px;
-		height: 76px;
+		height: 64px;
 	}
 }
 
