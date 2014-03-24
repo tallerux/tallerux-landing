@@ -13,7 +13,7 @@ html {
 }
 
 header {
-  background: url(../img/blackboard.jpg) center center;
+  background: black url(../img/blackboard.jpg) center center;
   color: #fff;
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -333,7 +333,7 @@ strong {
 
 footer {
   padding: 2rem 0;
-  background: url(../img/blackboard.jpg) center bottom;
+  background: black url(../img/blackboard.jpg) center bottom;
   color: #FFF;
 }
 footer .badges {
