@@ -331,7 +331,7 @@ strong {
 
 		li {
 			display: inline-block;
-			margin: 40px 40px 20px;
+			margin: 40px 30px 20px;
 		}
 	}
 
@@ -362,6 +362,28 @@ strong {
 		width: 233px;
 		height: 64px;
 	}
+
+	.logo-dieau {
+		@extend .ir-logo;
+		background-position: 0 -438px;
+		width: 151px;
+		height: 66px;
+	}
+
+	.logo-sinapsis {
+		@extend .ir-logo;
+		background-position: 0 -513px;
+		width: 229px;
+		height: 65px;
+	}
+
+	.logo-uxsv {
+		@extend .ir-logo;
+		background-position: 0 -575px;
+		width: 134px;
+		height: 90px;
+	}
+
 }
 
 footer {
