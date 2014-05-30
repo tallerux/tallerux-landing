@@ -1,0 +1,68 @@
+/*copy and paste de main.css*/
+@import url(../lib/normalize-css/normalize.css);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Variables */
+html {
+  font: 1em/1.5 "Roboto", sans-serif;
+  font-weight: 200;
+  color: #282627;
+}
+
+header {
+  color: black;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+/*header .tagline {
+  display: inline-block;
+  margin: 3em 0;
+  border: 1px solid #fff;
+  border-width: 1px 0;
+  height: 3rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  float: right;
+}*/
+header .lead {
+  margin: 4rem auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.logo {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 226px;
+  height: 115px;
+  background: url(../img/inter_logo.png) no-repeat center center;
+}
+
+.nav-accesible {
+  height: 0;
+}
+.nav-accesible a {
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+/*Lauyout*/
+.container, .properties, .method, .contact-us, .nav-accesible {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:before, .properties:before, .method:before, .contact-us:before, .nav-accesible:before, .container:after, .properties:after, .method:after, .contact-us:after, .nav-accesible:after {
+  content: " ";
+  display: table;
+  .container:after, .properties:after, .method:after, .contact-us:after, .nav-accesible:after {
+  clear: both;
+}
