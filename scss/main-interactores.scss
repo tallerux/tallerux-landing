@@ -1,0 +1,169 @@
+/*copy and paste de main.css*/
+@import "../lib/bower-bourbon/bourbon";
+@import "../lib/bower-neat/neat";
+@import "../lib/normalize-css/normalize.css";
+
+/*general style*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font: 18px/1.2 "Roboto", sans-serif;
+  font-weight: 200;
+  color: #282627;
+}
+
+header {
+  color: black;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+
+
+/* Layout */
+.container {
+  @include outer-container;
+}
+
+.inner-layout{
+  @include span-columns(7);
+  @include shift(3);
+}
+
+.main-interest,
+.people,
+.partners,
+.contact {
+  @extend .container;
+}
+
+.inner-container,
+.main-interest,
+.people,
+.partners,
+.contact,
+.lead {
+  @include clearfix;
+  @extend .inner-layout;
+}
+
+
+/*header*/
+.lead {
+  font-size: 1.44rem;
+  font-weight: 100;
+}
+
+.logo-container{
+  text-align: center;
+}
+.logo {
+  text-indent: -9999px;
+  display: inline-block;
+  text-align: center;
+  width: 226px;
+  height: 115px;
+  background: url(../img/inter_logo.png) no-repeat center center;
+}
+
+.goals{
+  height: 398px;
+  background-color: #ccc;
+}
+
+.title-section{
+  font-size:2rem;
+  font-weight:300;
+  color:#E81E25;
+  margin-top: 0px;
+
+}
+
+ul, a {
+  text-decoration: none;
+  padding: 0;
+}
+
+.main-interest ul li{
+    display: inline-block;
+    border-radius: 40px;
+    border: 1px solid red;
+    padding: 0.5rem 2.05rem;
+    margin: 0 0.88rem 0.88rem 0;
+}
+
+.people {
+  height: 19.11rem;
+}
+
+.names {
+  padding: 0;
+
+  li{
+    display: inline-block;
+    @include span-columns(2);
+    @include shift(1);
+  }
+
+  li:first-child{
+    margin: 0;
+    @include shift(0);
+      }
+
+}
+
+.projects{
+  background-color: #E81E25;
+}
+
+.project-container:first-child {
+  margin-left: 0;
+}
+
+.project-container {
+  @include span-columns(4);
+  @include shift(1);
+}
+
+
+.logo-sinapsis {
+    width: 30%;
+    display: inline-block;
+    float: left;
+  }
+  
+.partner-descriptions {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    margin: 0;
+  }
+
+.contact{
+  text-align: center;
+  font-style: italic;
+  font-size: 1.66rem;
+}
+
+.contact-us{
+  font-weight: 300;
+  color:white;
+  font-style: normal;
+  font-size: 1.38rem;
+  border:1px #29ABE2 solid;
+  padding: 0.5rem 2.61rem;
+  background-color: #29ABE2;
+  -webkit-box-shadow: 0px 4px 0px #186377;
+  -moz-box-shadow: 0px 4px 0px #186377;
+  box-shadow: 0px 4px 0px #186377;
+
+}
+
