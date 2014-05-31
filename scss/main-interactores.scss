@@ -1,15 +1,16 @@
-/*copy and paste de main.css*/
 @import "../lib/bower-bourbon/bourbon";
 @import "../lib/bower-neat/neat";
 @import "../lib/normalize-css/normalize.css";
 
-/*general style*/
+
+/* GENERAL STYLES */
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   font: 18px/1.2 "Roboto", sans-serif;
   font-weight: 200;
@@ -26,18 +27,24 @@ section {
   padding: 5rem 0;
 }
 
+ul, a {
+  text-decoration: none;
+  padding: 0;
+}
 
 
-/* Layout */
+/* LAYOUT */
+
+$grid-columns: 8;
+$gutter: 20px;
+$border-box-sizing: false;
+
 .container {
   @include outer-container;
+  width: 664px;  
 }
 
-.inner-layout{
-  @include span-columns(7);
-  @include shift(3);
-}
-
+.main-header,
 .main-interest,
 .people,
 .partners,
@@ -45,18 +52,9 @@ section {
   @extend .container;
 }
 
-.inner-container,
-.main-interest,
-.people,
-.partners,
-.contact,
-.lead {
-  @include clearfix;
-  @extend .inner-layout;
-}
 
+/* HEADER */
 
-/*header*/
 .lead {
   font-size: 1.44rem;
   font-weight: 100;
@@ -74,6 +72,9 @@ section {
   background: url(../img/inter_logo.png) no-repeat center center;
 }
 
+
+/* GOALS */
+
 .goals{
   height: 398px;
   background-color: #ccc;
@@ -87,18 +88,19 @@ section {
 
 }
 
-ul, a {
-  text-decoration: none;
-  padding: 0;
-}
 
-.main-interest ul li{
+/* INTERESTS */
+
+.main-interest li{
     display: inline-block;
     border-radius: 40px;
     border: 1px solid red;
     padding: 0.5rem 2.05rem;
     margin: 0 0.88rem 0.88rem 0;
 }
+
+
+/* PEOPLE */
 
 .people {
   height: 19.11rem;
@@ -116,36 +118,45 @@ ul, a {
   li:first-child{
     margin: 0;
     @include shift(0);
-      }
+  }
 
 }
 
+
+/* PROJECTS */
+
 .projects{
   background-color: #E81E25;
+  @include clearfix;
+}
+
+.project-container {
+  @include span-columns(3.5);
+  @include shift(1);
 }
 
 .project-container:first-child {
   margin-left: 0;
 }
 
-.project-container {
-  @include span-columns(4);
-  @include shift(1);
+
+/* PARTNERS */
+
+.logo-sinapsis {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+  
+.partner-descriptions {
+  width: 70%;
+  display: inline-block;
+  float: left;
+  margin: 0;
 }
 
 
-.logo-sinapsis {
-    width: 30%;
-    display: inline-block;
-    float: left;
-  }
-  
-.partner-descriptions {
-    width: 70%;
-    display: inline-block;
-    float: left;
-    margin: 0;
-  }
+/* CONTACT */
 
 .contact{
   text-align: center;
@@ -164,6 +175,5 @@ ul, a {
   -webkit-box-shadow: 0px 4px 0px #186377;
   -moz-box-shadow: 0px 4px 0px #186377;
   box-shadow: 0px 4px 0px #186377;
-
 }
 
