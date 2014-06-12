@@ -52,6 +52,11 @@ $border-box-sizing: false;
   @extend .container;
 }
 
+.logo-sprite{
+  background-image: url(../img/logos-sprite.png);
+  text-indent: -9999px;
+}
+
 
 /* HEADER */
 
@@ -69,7 +74,7 @@ $border-box-sizing: false;
   text-align: center;
   width: 226px;
   height: 115px;
-  background: url(../img/inter_logo.png) no-repeat center center;
+  background: url(../img/inter_logo.png) no-repeat;
 }
 
 
@@ -143,9 +148,14 @@ $border-box-sizing: false;
 /* PARTNERS */
 
 .logo-sinapsis {
-  width: 30%;
+  @extend .logo-sprite;
+  background-position: 26.5rem 5.66rem;
+  background-size: auto 24.88rem;
+  width: 8.88rem;
+  height: 2.77rem;
   display: inline-block;
   float: left;
+  
 }
   
 .partner-descriptions {
@@ -153,6 +163,7 @@ $border-box-sizing: false;
   display: inline-block;
   float: left;
   margin: 0;
+  padding-left: 0.8rem;
 }
 
 
@@ -162,6 +173,10 @@ $border-box-sizing: false;
   text-align: center;
   font-style: italic;
   font-size: 1.66rem;
+  border-top-color: #612a63;
+  border-top-style: solid;
+  border-top-width: 3px;
+  height: 18.61rem;
 }
 
 .contact-us{
@@ -175,5 +190,60 @@ $border-box-sizing: false;
   -webkit-box-shadow: 0px 4px 0px #186377;
   -moz-box-shadow: 0px 4px 0px #186377;
   box-shadow: 0px 4px 0px #186377;
+}
+
+
+.contact-us:hover{
+  background-color: #2189ad;
+}
+
+.contact-us:active{
+  -webkit-box-shadow: 0px 4px 0px #2189ad;
+  -moz-box-shadow: 0px 4px 0px #2189ad;
+  box-shadow: 0px 4px 0px #2189ad;
+  padding-top: 0.4rem;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #2c2735;
+  padding-top: 3.66rem;
+  height: 16.67rem;
+  @include clearfix;
+}
+
+.badges {
+  margin: 3rem auto auto auto;
+  
+  a {
+    margin: 0.5rem 0.85rem;
+    color: #fff;
+    }
+}
+.logo-ixda {
+  @extend .logo-sprite;
+  display: inline-block;
+  height: 3rem;
+  width: 6.83rem;
+  float: right;
+}
+
+.logo-hnea {
+  @extend .logo-sprite;
+  background-position: 94px 597px;
+  display: inline-block;
+  height: 3.11rem;
+  width: 5.11rem;
+  float: right;
+}
+
+.logo-white {
+  @extend .logo-sprite;
+  background-position: 0 535px;
+  display: inline-block;
+  height: 4.61rem;
+  width: 8.05rem;
 }
 
