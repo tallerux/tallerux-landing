@@ -1,4 +1,4 @@
-$mobile: new-breakpoint(max-width 320px 4);
+$mobile: new-breakpoint(max-width 420px 4);
 @include media($mobile) {
  
 header{
@@ -43,10 +43,8 @@ header{
 
 /* PEOPLE */
 .names{
-  @include row();
-  
   li{
-    @include span-columns(4);
+    @include span-columns(3);
     @include shift(0.5);
     }
   
@@ -105,8 +103,6 @@ header{
     border-radius: 0; 
   }
 
-
-
   img,
   a:hover img,
   a:active img {
@@ -115,19 +111,55 @@ header{
     -webkit-border-radius: 0%;
             border-radius: 0%;
   }
+}}
 
-  p{
-    text-align:left;
-    @include shift(0.5);
-  }
-
-
-  a:hover{
-    
-  }
-
+/* PROJECTS */
+.project-container {
+  @include span-columns(4 of 4);
+  @include shift(0);
 }
 
+/* PARTNERS */
+.csmobile {
+  padding:5rem 0 9rem 0;
+}
 
+.logo-sinapsis {
+  background-position: 9.38rem 8.5rem;
+  -webkit-background-size: auto  38.44rem;
+  -o-background-size: auto  38.44rem;
+  background-size: auto 38.44rem;
+  width:90%;
+  float:center;
+  height:3.77rem;
+  margin:12% 0 2% 0;
+}
 
+.partner-descriptions {
+  width: 100%;
+  margin: 3% 0;
+  padding-left:0;
+}
+
+/*CONTACT US*/
+.contact {
+  height:24.61rem;
+}
+
+/*FOOTER*/
+footer {
+  padding-top: 1.2rem;
+  height: 20.67rem;
+}
+
+.badges a {
+  margin: 1rem 3.2rem;
+}
+
+.logo-ixda {
+  float:center;
+}
+
+.logo-hnea {
+  float:center;
 }
