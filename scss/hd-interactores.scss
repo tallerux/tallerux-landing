@@ -129,7 +129,7 @@ $border-box-sizing: false;
 /* GOALS */
 
 .goals{
-  height: 398px;
+  height: 550px;
   background: url(../img/ux_sample.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: 100%;
@@ -138,18 +138,18 @@ $border-box-sizing: false;
   -webkit-box-shadow: inset 0 -1px 10px rgba(0,0,0,0.8);
   
   .our{
-    padding:1.7rem;
+    padding-top:4rem;
   }
-
+  
   h2{
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
   }
 }
 
 .goals div p{
   text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
   color: #fff;
-  font-size:1.2rem;
+  font-size:1.5rem;
   width:75%;
 }
 
