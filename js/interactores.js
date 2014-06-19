@@ -3,13 +3,13 @@ $( document ).ready(function() {
 		if ($(this).scrollTop() > 350)
        			$('#menu').slideToggle();
       });*/
-	$(document).scroll(function(){
+	/*$(document).scroll(function(){
         if ($(this).scrollTop() > 350) {
             $('#menu').slideDown(200);}
 
         else {
             $('#menu').slideUp(200);
-        }
+        }*/
 
 /*        if ($(this).scrollTop() < 2000) {
             $('#menu').slideDown(200);}

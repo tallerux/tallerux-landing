@@ -1,0 +1,133 @@
+$mobile: new-breakpoint(max-width 320px 4);
+@include media($mobile) {
+ 
+header{
+  padding-top:10px;
+}
+
+/*LAYOUT*/
+
+.container,
+.main-header,
+.main-interest,
+.people,
+.partners {
+  width: auto;
+  margin: 0 5%;
+}
+
+
+/*MENU*/
+
+/*GOALS*/
+.goals{
+  height: 465px;
+  background-attachment: scroll;
+  box-shadow: inset 0 0 0 #fff;
+  background-size: 230%;
+  
+  .our{
+    padding: 1.83rem 0 0 0;
+  }
+}
+
+.goals div p{
+  font-size:1rem;
+  width:auto;
+}
+
+/* INTERESTS */
+.areas{
+  padding:35% 0 0;
+}
+
+/* PEOPLE */
+.names{
+  @include row();
+  
+  li{
+    @include span-columns(4);
+    @include shift(0.5);
+    }
+  
+  li:first-child{
+    @include shift(0.5);
+  }
+
+  a,
+  a:hover,
+  a:active {
+    background-image: url(../img/sprite_people.png);
+    display: inline-block;
+    width: 191px;
+    height: 191px;
+  }
+
+  .luciana{
+    background-position: 0 191px; 
+  }
+
+  .luciana:hover,
+  .luciana:active {
+    background-position: -199px -382px;
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+  }
+
+  .damian{
+    background-position: 0 0px; 
+  }
+
+  .damian:hover,
+  .damian:active {
+    background-position: -199px 0px;
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+  }
+
+  .jorge{
+    background-position: 0 382px; 
+  }
+
+  .jorge:hover,
+  .jorge:active {
+    background-position: -199px -191px;
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+  }
+
+
+
+  img,
+  a:hover img,
+  a:active img {
+    opacity:0;
+    width:auto;
+    -webkit-border-radius: 0%;
+            border-radius: 0%;
+  }
+
+  p{
+    text-align:left;
+    @include shift(0.5);
+  }
+
+
+  a:hover{
+    
+  }
+
+}
+
+
+
+}

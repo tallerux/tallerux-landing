@@ -240,7 +240,8 @@ $border-box-sizing: false;
     opacity: 0.0;
   }
     
-  a:hover {
+  a:hover,
+  a:active {
     background: url(../img/hover_in.png) no-repeat;
     border-radius: 50%;
     background-size: cover;
@@ -250,7 +251,6 @@ $border-box-sizing: false;
   }
 
   a:active {
-    @extended a:hover;
     background-position: -148px; 
   }
 
@@ -397,6 +397,9 @@ footer {
   display: inline-block;
   height: 4.61rem;
   width: 8.05rem;
-
-
 }
+
+@import "mobile-interactores"
+
+
+
