@@ -53,6 +53,7 @@ $border-box-sizing: false;
 
 .logo-sprite{
   background-image: url(../img/logos-sprite.png);
+  background-repeat: no-repeat;
   text-indent: -9999px;
 }
 
@@ -383,7 +384,7 @@ footer {
 
 .logo-hnea {
   @extend .logo-sprite;
-  background-position: 94px 597px;
+  background-position: -143px -62px;
   display: inline-block;
   height: 3.11rem;
   width: 5.11rem;
@@ -392,7 +393,7 @@ footer {
 
 .logo-white {
   @extend .logo-sprite;
-  background-position: 0 535px;
+  background-position: 0 -124px;
   display: inline-block;
   height: 4.61rem;
   width: 8.05rem;

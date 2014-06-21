@@ -63,6 +63,7 @@ ul, a {
 
 .logo-sprite, .logo-sinapsis, .logo-ixda, .logo-hnea, .logo-white {
   background-image: url(../img/logos-sprite.png);
+  background-repeat: no-repeat;
   text-indent: -9999px;
 }
 
@@ -389,7 +390,7 @@ footer:after {
 }
 
 .logo-hnea {
-  background-position: 94px 597px;
+  background-position: -143px -62px;
   display: inline-block;
   height: 3.11rem;
   width: 5.11rem;
@@ -397,7 +398,7 @@ footer:after {
 }
 
 .logo-white {
-  background-position: 0 535px;
+  background-position: 0 -124px;
   display: inline-block;
   height: 4.61rem;
   width: 8.05rem;
@@ -510,60 +511,62 @@ footer:after {
     -webkit-border-radius: 0%;
     border-radius: 0%;
   }
-}
-/* PROJECTS */
-.project-container {
-  float: left;
-  display: block;
-  margin-right: 7.42297%;
-  width: 100%;
-  margin-left: 0%;
-}
-.project-container:last-child {
-  margin-right: 0;
-}
 
-/* PARTNERS */
-.csmobile {
-  padding: 5rem 0 9rem 0;
-}
+  /* PROJECTS */
+  .project-container {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .project-container:last-child {
+    margin-right: 0;
+  }
 
-.logo-sinapsis {
-  background-position: 9.38rem 8.5rem;
-  -webkit-background-size: auto  38.44rem;
-  -o-background-size: auto  38.44rem;
-  background-size: auto 38.44rem;
-  width: 90%;
-  float: center;
-  height: 3.77rem;
-  margin: 12% 0 2% 0;
-}
+  /* PARTNERS */
+  .csmobile {
+    padding: 5rem 0 9rem 0;
+  }
 
-.partner-descriptions {
-  width: 100%;
-  margin: 3% 0;
-  padding-left: 0;
-}
+  .logo-sinapsis {
+    background-position: 0.55rem -29.94rem;
+    -webkit-background-size: auto  38.44rem;
+    -o-background-size: auto  38.44rem;
+    background-size: auto 38.44rem;
+    width: 90%;
+    float: center;
+    height: 3.77rem;
+    margin: 12% 0 2% 0;
+  }
 
-/*CONTACT US*/
-.contact {
-  height: 24.61rem;
-}
+  .partner-descriptions {
+    width: 100%;
+    margin: 3% 0;
+    padding-left: 0;
+  }
 
-/*FOOTER*/
-footer {
-  padding-top: 1.2rem;
-  height: 20.67rem;
-}
+  /*CONTACT US*/
+  .contact {
+    height: 24.61rem;
+  }
 
-.badges a {
-  margin: 1rem 3.2rem;
-}
+  /*FOOTER*/
+  footer {
+    padding-top: 1.2rem;
+    height: 21.67rem;
+  }
 
-.logo-ixda {
-  float: center;
-}
+  .badges a {
+    margin: 1rem 3.2rem;
+  }
 
-.logo-hnea {
-  float: center;
+  .logo-ixda {
+    float: center;
+  }
+
+  .logo-hnea {
+    float: center;
+  }
 }
+/*<< string with media*/
