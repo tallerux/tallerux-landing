@@ -234,7 +234,7 @@ $border-box-sizing: false;
   }
 
   a:hover img {
-    opacity: 0.1;
+    opacity: 0.04;
   }
 
   a:active img {
@@ -303,9 +303,9 @@ $border-box-sizing: false;
 
 .logo-sinapsis {
   @extend .logo-sprite;
-  background-position: 26.5rem 5.66rem;
-  background-size: auto 24.88rem;
-  width: 8.88rem;
+  background-position: 0.5rem -21rem;
+  background-size: auto 27rem;
+  width: 10.88rem;
   height: 2.77rem;
   display: inline-block;
   float: left;

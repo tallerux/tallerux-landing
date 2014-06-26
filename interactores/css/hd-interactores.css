@@ -1,40 +1,33 @@
-@import url(../lib/normalize-css/normalize.css);
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-neat\/grid\/_grid\.scss}line{font-family:\000032}}
+@import url(../../lib/normalize-css/normalize.css);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* GENERAL STYLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\000038}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000314}}
 html {
   font: 18px/1.2 "Roboto", sans-serif;
   font-weight: 200;
   color: #282627; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000320}}
 header {
   color: black;
   padding-top: 4rem;
   padding-bottom: 2rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000326}}
 section {
   padding: 5rem 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000330}}
 ul, a {
   text-decoration: none;
   padding: 0; }
 
 /* LAYOUT */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000342}}
 .container, .main-header,
 .main-interest,
 .people,
@@ -44,7 +37,6 @@ ul, a {
   margin-left: auto;
   margin-right: auto;
   width: 664px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000317}}
   .container:before, .main-header:before,
   .main-interest:before,
   .people:before,
@@ -54,20 +46,17 @@ ul, a {
   .partners:after {
     content: " ";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
   .container:after, .main-header:after,
   .main-interest:after,
   .people:after,
   .partners:after {
     clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000354}}
 .logo-sprite, .logo-sinapsis, .logo-ixda, .logo-hnea, .logo-white {
   background-image: url(../img/logos-sprite.png);
   text-indent: -9999px; }
 
 /*MENU*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000361}}
 #menu {
   width: 100%;
   height: 70px;
@@ -76,7 +65,6 @@ ul, a {
   position: fixed;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000371}}
   #menu .logo-menu {
     background: url(../img/inter_logo.png) no-repeat;
     -webkit-background-size: cover;
@@ -85,7 +73,6 @@ ul, a {
     display: inline-block;
     width: 6.38rem;
     height: 3.2rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000381}}
   #menu .button {
     display: inline-block;
     font-weight: 300;
@@ -99,10 +86,8 @@ ul, a {
     -webkit-box-shadow: 0px 4px 0px #186377;
     -moz-box-shadow: 0px 4px 0px #186377;
     box-shadow: 0px 4px 0px #186377; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\0000396}}
   #menu .button:hover {
     background-color: #2189ad; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003100}}
   #menu .button:active {
     -webkit-box-shadow: 0px 0px 0px;
     -moz-box-shadow: 0px 0px 0px;
@@ -110,16 +95,13 @@ ul, a {
     margin-top: .9rem; }
 
 /* HEADER */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003111}}
 .lead {
   font-size: 1.44rem;
   font-weight: 100; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003116}}
 .logo-container {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003119}}
 .logo {
   text-indent: -9999px;
   display: inline-block;
@@ -129,7 +111,6 @@ ul, a {
   background: url(../img/inter_logo.png) no-repeat; }
 
 /* GOALS */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003131}}
 .goals {
   height: 550px;
   background: url(../img/ux_sample.jpg) no-repeat center center;
@@ -138,21 +119,17 @@ ul, a {
   box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.8); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003140}}
   .goals .our {
     padding-top: 4rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003144}}
   .goals h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003149}}
 .goals div p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   color: #fff;
   font-size: 1.5rem;
   width: 75%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003156}}
 .title-section {
   font-size: 2rem;
   font-weight: 300;
@@ -160,56 +137,45 @@ ul, a {
   margin-top: 0px; }
 
 /* INTERESTS */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003166}}
 .main-interest li {
   display: inline-block;
   border-radius: 40px;
   padding: 0.5rem 2.05rem;
   margin: 0 0.88rem 0.88rem 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003173}}
 .main-interest li:nth-of-type(5n+1) {
   border: 1px solid #973f98;
   color: #973f98; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003178}}
 .main-interest li:nth-of-type(5n+2) {
   border: 1px solid #a8b22b;
   color: #a8b22b; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003183}}
 .main-interest li:nth-of-type(5n+3) {
   border: 1px solid #1abcdc;
   color: #1abcdc; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003188}}
 .main-interest li:nth-of-type(5n+4) {
   border: 1px solid #642d10;
   color: #642d10; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003193}}
 .main-interest li:nth-of-type(5n+5) {
   border: 1px solid #ed0b70;
   color: #ed0b70; }
 
 /* PEOPLE */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003202}}
 .people {
   /* height: 19.11rem; */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003206}}
 .names {
   padding: 0;
   *zoom: 1;
   display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000317}}
   .names:before, .names:after {
     content: " ";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
   .names:after {
     clear: both; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003210}}
   .names li {
     display: inline-block;
     float: left;
@@ -217,14 +183,11 @@ ul, a {
     margin-right: 3.57866%;
     width: 22.316%;
     margin-left: 12.94733%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
     .names li:last-child {
       margin-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003216}}
   .names li:first-child {
     margin: 0;
     margin-left: 0%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003221}}
   .names img {
     -webkit-moz-border-radius: 50%;
     -moz-moz-border-radius: 50%;
@@ -233,16 +196,12 @@ ul, a {
     moz-border-radius: 50%;
     border-radius: 50%;
     width: 8.2rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003231}}
   .names p {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003235}}
   .names a:hover img {
     opacity: 0.1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003239}}
   .names a:active img {
     opacity: 0.0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003243}}
   .names a:hover {
     background: url(../img/hover_in.png) no-repeat;
     border-radius: 50%;
@@ -250,52 +209,42 @@ ul, a {
     display: inline-block;
     width: 8.22rem;
     height: 8.22rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003252}}
   .names a:active {
     @extended a:hover;
     background-position: -148px; }
 
 /* PROJECTS */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003262}}
 .projects {
   background-color: #E81E25;
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000317}}
   .projects:before, .projects:after {
     content: " ";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
   .projects:after {
     clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003267}}
 .projects .title-section,
 .projects p {
   color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003272}}
 .project-container {
   float: left;
   display: block;
   margin-right: 3.57866%;
   width: 41.737%;
   margin-left: 12.94733%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
   .project-container:last-child {
     margin-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003277}}
 .project-container:first-child {
   margin-left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003281}}
 .project-container h3,
 .project-container a {
   margin: 0.2rem;
   width: 12.06rem;
   height: 5.81rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003288}}
 .project-container .taller-ux {
   text-indent: -9999px;
   background: url(../img/tallerux_logo.png) no-repeat center center;
@@ -303,11 +252,9 @@ ul, a {
   background-size: contain; }
 
 /* PARTNERS */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003300}}
 .partners {
   margin: 5.38rem auto 5.22rem auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003304}}
 .logo-sinapsis {
   background-position: 26.5rem 5.66rem;
   background-size: auto 24.88rem;
@@ -316,7 +263,6 @@ ul, a {
   display: inline-block;
   float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003315}}
 .partner-descriptions {
   width: 70%;
   display: inline-block;
@@ -325,7 +271,6 @@ ul, a {
   padding-left: 0.8rem; }
 
 /* CONTACT */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003326}}
 .contact {
   text-align: center;
   font-style: italic;
@@ -335,7 +280,6 @@ ul, a {
   border-top-width: 3px;
   height: 18.61rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003336}}
 .contact-us {
   font-weight: 300;
   color: white;
@@ -347,11 +291,9 @@ ul, a {
   -moz-box-shadow: 0px 4px 0px #186377;
   box-shadow: 0px 4px 0px #186377; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003348}}
 .contact-us:hover {
   background-color: #2189ad; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003352}}
 .contact-us:active {
   -webkit-box-shadow: 0px 4px 0px #2189ad;
   -moz-box-shadow: 0px 4px 0px #2189ad;
@@ -359,36 +301,29 @@ ul, a {
   padding-top: 0.4rem; }
 
 /* FOOTER */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003362}}
 footer {
   background-color: #2c2735;
   padding-top: 3.66rem;
   height: 16.67rem;
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000317}}
   footer:before, footer:after {
     content: " ";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/lib\/bower-bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
   footer:after {
     clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003369}}
 .badges {
   margin: 3rem auto auto auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003372}}
   .badges a {
     margin: 0.5rem 0.85rem;
     color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003377}}
 .logo-ixda {
   display: inline-block;
   height: 3rem;
   width: 6.83rem;
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003385}}
 .logo-hnea {
   background-position: 94px 597px;
   display: inline-block;
@@ -396,7 +331,6 @@ footer {
   width: 5.11rem;
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Proyectos\/TallerUX\/tallerux\.github\.io\/scss\/hd-interactores\.scss}line{font-family:\00003394}}
 .logo-white {
   background-position: 0 535px;
   display: inline-block;
