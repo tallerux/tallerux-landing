@@ -10,13 +10,5 @@ $( document ).ready(function() {
         else {
             $('#menu').slideUp(200);
         }
-
-/*        if ($(this).scrollTop() < 2000) {
-            $('#menu').slideDown(200);}
-
-        else {
-            $('#menu').slideUp(200);
-        }*/
-
 	});
 });

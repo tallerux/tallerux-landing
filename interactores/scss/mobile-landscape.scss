@@ -1,0 +1,126 @@
+$mobile-landscape: new-breakpoint(min-width 421px max-width 768px, 6);
+@include media($mobile-landscape) {
+	
+	header {
+		padding: 10px;
+	}
+
+	/* LAYOUT */
+	.container,
+	.main-header,
+	.main-interest,
+	.people,
+	.partners {
+	  width: auto;
+	  margin: 0 5%;
+	}
+
+	/* MENU */
+	#menu {
+		height: 55px;
+
+		.logo-menu {
+			-webkit-background-size: contain;
+			     -o-background-size: contain;
+			        background-size: contain;
+		  width: 5.5rem;
+		  height: 3rem;
+		}
+
+		.button {
+			font-size: .7rem;
+			margin: .5rem;
+		}
+	}
+
+	/* GOALS */
+	.goals {
+		height: 460px;
+		background-attachment: scroll;
+		-webkit-box-shadow: inset 0px 0px 0px #FFF;
+		        box-shadow: inset 0px 0px 0px #FFF;
+	}
+
+	.our {
+		padding: 0;
+	}
+
+	/* PEOPLE */
+	.names {
+		li{
+    	@include span-columns(1.5 of 6);
+    	@include shift(0.5);
+    }
+  
+  	li:first-child{
+    	@include shift(0.5);
+    	margin-left: 0;
+    	}
+
+  	a,
+  	a:hover,
+  	a:active {
+  	  background-image: url(../img/sprite_people.png);
+  	  -webkit-background-size: 16.55rem;
+  	       -o-background-size: 16.55rem;
+  	          background-size: 16.55rem;
+  	  display: inline-block;
+  	  width: 8.22rem;
+  	  height: 8.22rem;
+  	}
+
+  	.luciana{
+  	  background-position: 0 -298px; 
+  	}
+
+  	.luciana:hover,
+  	.luciana:active {
+  	  background-position: -155px -298px;
+  	  -webkit-border-radius: 0; 
+  	  border-radius: 0; 
+  	}
+
+  	.damian{
+  	  background-position: 0 0px; 
+  	}
+	
+  	.damian:hover,
+  	.damian:active {
+  	  background-position: -155px 0px;
+  	 	-webkit-border-radius: 0; 
+  	  border-radius: 0; 
+  	}
+	
+  	.jorge{
+  	  background-position: 0 -149px; 
+  	}
+
+  	.jorge:hover,
+  	.jorge:active {
+  	  background-position: -155px -149px;
+  	  -webkit-border-radius: 0; 
+  	  border-radius: 0; 
+  	}
+
+  	img,
+  	a:hover img,
+  	a:active img {
+  	  opacity:0;
+  	  width:8.22rem;
+  	  -webkit-border-radius: 0%;
+  	          border-radius: 0%;
+  	}
+		
+		p {
+			text-align: left;
+			width: 8.05rem;
+		}  
+  }
+
+  /* PARTNERS */
+  .partner-descriptions {
+  	width: 62%;
+  }
+}
+
+

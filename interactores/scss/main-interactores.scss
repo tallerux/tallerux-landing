@@ -130,7 +130,7 @@ $border-box-sizing: false;
 /* GOALS */
 
 .goals{
-  height: 398px;
+  height: 450px;
   background: url(../img/ux_sample.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: 100%;
@@ -215,7 +215,7 @@ $border-box-sizing: false;
   }
 
   li:first-child{
-    margin: 0;
+    /* margin: 0; */
     @include shift(0);
   }
 
@@ -403,4 +403,5 @@ footer {
 
 /* ESTILOS PARA @MEDIA QUERYS */
 
-@import "mobile-interactores"
+@import "mobile-interactores";
+@import "mobile-landscape";
