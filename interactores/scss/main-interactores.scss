@@ -1,6 +1,6 @@
-@import "../lib/bower-bourbon/bourbon";
-@import "../lib/bower-neat/neat";
-@import "../lib/normalize-css/normalize.css";
+@import "../../lib/bower-bourbon/bourbon";
+@import "../../lib/bower-neat/neat";
+@import "../../lib/normalize-css/normalize.css";
 
 
 /* GENERAL STYLES */
@@ -53,6 +53,7 @@ $border-box-sizing: false;
 
 .logo-sprite{
   background-image: url(../img/logos-sprite.png);
+  background-repeat: no-repeat;
   text-indent: -9999px;
 }
 
@@ -129,7 +130,7 @@ $border-box-sizing: false;
 /* GOALS */
 
 .goals{
-  height: 550px;
+  height: 398px;
   background: url(../img/ux_sample.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: 100%;
@@ -138,18 +139,18 @@ $border-box-sizing: false;
   -webkit-box-shadow: inset 0 -1px 10px rgba(0,0,0,0.8);
   
   .our{
-    padding-top:4rem;
+    padding:1.7rem;
   }
-  
+
   h2{
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
 }
 
 .goals div p{
   text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
   color: #fff;
-  font-size:1.5rem;
+  font-size:1.2rem;
   width:75%;
 }
 
@@ -240,7 +241,8 @@ $border-box-sizing: false;
     opacity: 0.0;
   }
     
-  a:hover {
+  a:hover,
+  a:active {
     background: url(../img/hover_in.png) no-repeat;
     border-radius: 50%;
     background-size: cover;
@@ -250,10 +252,8 @@ $border-box-sizing: false;
   }
 
   a:active {
-    @extended a:hover;
     background-position: -148px; 
   }
-
 }
 
 
@@ -384,7 +384,7 @@ footer {
 
 .logo-hnea {
   @extend .logo-sprite;
-  background-position: 94px 597px;
+  background-position: -143px -62px;
   display: inline-block;
   height: 3.11rem;
   width: 5.11rem;
@@ -393,10 +393,14 @@ footer {
 
 .logo-white {
   @extend .logo-sprite;
-  background-position: 0 535px;
+  background-position: 0 -124px;
   display: inline-block;
   height: 4.61rem;
   width: 8.05rem;
-
-
 }
+
+
+
+/* ESTILOS PARA @MEDIA QUERYS */
+
+@import "mobile-interactores"
