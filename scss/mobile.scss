@@ -1,6 +1,12 @@
 $mobile: new-breakpoint(max-width 420px 4);
+@mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
+		background-position: $pos-left $pos-top;
+		width: $width;
+		height: $height;
+		top: $top;
+	}
 @include media($mobile){
-	
+
 	header{
 		.tagline {
 			height: 3rem;
@@ -28,24 +34,60 @@ $mobile: new-breakpoint(max-width 420px 4);
 	/* PROPERTIES */
 	.properties {
 		.reason {
+			
 			@include shift(1);
-			@include span-columns(3 of 4);
+			@include span-columns(3.5 of 4);
+
+			p {
+				font-size: 1.18rem;
+				/* margin-right: 2%; */
+				}		
 			}
 
 		.reason:first-of-type {
 			padding-top: 5.31rem;
 		}
 
-		.reason:before {
-			-webkit-background-size:130% 130%;
-			     -o-background-size:130% 130%;
-			        background-size:130% 130%;
-		  background-repeat: no-repeat;
+		.reason:nth-child(odd) {
+			@include shift(.3);		
 		}
 
-		p {
-			font-size: 1.18rem ;
+		.reason:before {
+			  position: absolute;
+			  content:'';
+			  background: url(../img/responsive-taller-icon-sprite.svg) top left;
+			  background-repeat: no-repeat;
 		}
+		
+		.reason-start:before {
+			@include sprite-position(0,0,78px,86px,2px);
+			left: 4px;
+		}
+	
+		.reason-fly:before {
+			@include sprite-position(-32px,-193px,173px,142px,-77px);
+			right: 230px;
+		}
+
+		.reason-minimal:before {
+		@include sprite-position(0,-96px,77px,79px,-79px);
+		left: -2px;
+		}
+
+		.reason-cc:before {
+			@include sprite-position(-76px,0,122px,116px,-101px);
+			right: 213px;
+		}
+
+		.reason-community:before {
+			@include sprite-position(-95px,-126px,88px,68px,-69px);
+			left: 7px;
+		}
+
+		.reason-comunity h3 {
+			margin-top: 0.4rem;
+		}
+
 	}
 
 	/* SHOWCASE */
@@ -95,16 +137,36 @@ $mobile: new-breakpoint(max-width 420px 4);
 	/* MOMENTS */
 	.method {
 		.moments{
-			@include span-columns(4 of 4);
-			@include shift (1);
+			/* @include span-columns(4 of 4); */
+			/* @include shift (1); */
 		}
 
 		li {
-				@include shift(0);
+				@include span-columns(3.5 of 4);
+				@include shift(.3);
+				
 				&:nth-child(2n) {
-					@include shift(1);
-			}
+					@include shift(.3);
+				}
+
+				&:before {
+					padding: 0 1rem;
+					float: left;
+				}
 		}
+
+		h3 {
+			@include shift(.6);
+			margin-top: 0.5rem; 
+		}
+
+		.moments p {
+			margin: 0.8rem 0 5rem;
+		}
+	}
+
+	.sponsors ul {
+		padding-left: 0; 
 	}
 
 }
