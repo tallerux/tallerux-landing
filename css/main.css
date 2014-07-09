@@ -375,7 +375,7 @@ footer {
     width: 173px;
     height: 142px;
     top: -77px;
-    right: 230px; }
+    left: -88px; }
   .properties .reason-minimal:before {
     background-position: 0 -96px;
     width: 77px;
@@ -387,7 +387,7 @@ footer {
     width: 122px;
     height: 116px;
     top: -101px;
-    right: 213px; }
+    left: -32px; }
   .properties .reason-community:before {
     background-position: -95px -126px;
     width: 88px;
@@ -419,7 +419,6 @@ footer {
         top: 0px;
         left: 0px; }
     .showcase .ediciones {
-      /* float: center; */
       width: auto;
       margin: 0px 37%; }
       .showcase .ediciones h5,
@@ -427,9 +426,6 @@ footer {
         text-align: center; }
 
   /* MOMENTS */
-  .method .moments {
-    /* @include span-columns(4 of 4); */
-    /* @include shift (1); */ }
   .method li {
     float: left;
     display: block;
@@ -441,13 +437,28 @@ footer {
     .method li:nth-child(2n) {
       margin-left: 8.05672%; }
     .method li:before {
-      padding: 0 1rem;
-      float: left; }
+      padding: 0 1rem; }
   .method h3 {
-    margin-left: 16.11345%;
     margin-top: 0.5rem; }
   .method .moments p {
     margin: 0.8rem 0 5rem; }
 
   .sponsors ul {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .badges {
+    float: center;
+    text-align: center; }
+
+  .logo-footer {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 59.71639%;
+    margin-left: 21.48459%;
+    margin-top: 1rem; }
+    .logo-footer:last-child {
+      margin-right: 0; }
+
+  .social {
+    display: inline-block; } }

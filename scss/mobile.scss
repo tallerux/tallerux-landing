@@ -66,17 +66,17 @@ $mobile: new-breakpoint(max-width 420px 4);
 	
 		.reason-fly:before {
 			@include sprite-position(-32px,-193px,173px,142px,-77px);
-			right: 230px;
+			left: -88px;
 		}
 
 		.reason-minimal:before {
-		@include sprite-position(0,-96px,77px,79px,-79px);
-		left: -2px;
+			@include sprite-position(0,-96px,77px,79px,-79px);
+			left: -2px;
 		}
 
 		.reason-cc:before {
 			@include sprite-position(-76px,0,122px,116px,-101px);
-			right: 213px;
+			left: -32px;
 		}
 
 		.reason-community:before {
@@ -122,7 +122,6 @@ $mobile: new-breakpoint(max-width 420px 4);
 		}
 
 		.ediciones {
-			/* float: center; */
 			width: auto;
 			margin: 0px 37%;
 			
@@ -136,11 +135,7 @@ $mobile: new-breakpoint(max-width 420px 4);
 	
 	/* MOMENTS */
 	.method {
-		.moments{
-			/* @include span-columns(4 of 4); */
-			/* @include shift (1); */
-		}
-
+		
 		li {
 				@include span-columns(3.5 of 4);
 				@include shift(.3);
@@ -150,13 +145,11 @@ $mobile: new-breakpoint(max-width 420px 4);
 				}
 
 				&:before {
-					padding: 0 1rem;
-					float: left;
+					padding: 0 1rem;					
 				}
 		}
 
 		h3 {
-			@include shift(.6);
 			margin-top: 0.5rem; 
 		}
 
@@ -167,6 +160,21 @@ $mobile: new-breakpoint(max-width 420px 4);
 
 	.sponsors ul {
 		padding-left: 0; 
+	}
+
+	.badges {
+		float: center;
+		text-align: center;
+	}
+
+	.logo-footer {
+		@include span-columns(2.5 of 4);
+		@include shift(.8);
+		margin-top: 1rem;
+	}
+
+	.social {
+		display: inline-block;
 	}
 
 }
