@@ -1,4 +1,4 @@
-$mobile: new-breakpoint(max-width 420px 4);
+$mobile: new-breakpoint(max-width 535px 4);
 @mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
 		background-position: $pos-left $pos-top;
 		width: $width;
@@ -92,9 +92,10 @@ $mobile: new-breakpoint(max-width 420px 4);
 
 	/* SHOWCASE */
 	.showcase {
-
-		height: 550px;
-		background-position: -220px 282px;
+		background-position: -8.93rem 23.93rem;
+		-webkit-background-size: 155%; 
+		-o-background-size: 155%; 
+		background-size: 155%; 
 
 		h4 {
 			text-align: center;
@@ -122,8 +123,8 @@ $mobile: new-breakpoint(max-width 420px 4);
 		}
 
 		.ediciones {
-			width: auto;
-			margin: 0px 37%;
+			margin: 1rem auto;
+			float: none;
 			
 			
 			h5,
@@ -145,7 +146,7 @@ $mobile: new-breakpoint(max-width 420px 4);
 				}
 
 				&:before {
-					padding: 0 1rem;					
+					padding: .1rem 1rem;					
 				}
 		}
 
@@ -157,9 +158,14 @@ $mobile: new-breakpoint(max-width 420px 4);
 			margin: 0.8rem 0 5rem;
 		}
 	}
-
+	
+	/* SPONSORS AND FOOTER */
 	.sponsors ul {
 		padding-left: 0; 
+	}
+	
+	footer .container {
+		text-align:center;
 	}
 
 	.badges {
@@ -168,13 +174,13 @@ $mobile: new-breakpoint(max-width 420px 4);
 	}
 
 	.logo-footer {
-		@include span-columns(2.5 of 4);
-		@include shift(.8);
-		margin-top: 1rem;
+		text-align: center;
+		width: 100%;
+		background-position: center;
+		margin: 1.5rem 0 .5rem;
 	}
 
 	.social {
-		display: inline-block;
-	}
+		margin-top: 1.5rem;	}
 
 }

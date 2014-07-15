@@ -324,7 +324,7 @@ footer {
     text-indent: -9999px;
     display: inline-block; }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 535px) {
   header .tagline {
     height: 3rem;
     line-height: 1.2rem;
@@ -399,8 +399,10 @@ footer {
 
   /* SHOWCASE */
   .showcase {
-    height: 550px;
-    background-position: -220px 282px; }
+    background-position: -8.93rem 23.93rem;
+    -webkit-background-size: 155%;
+    -o-background-size: 155%;
+    background-size: 155%; }
     .showcase h4 {
       text-align: center; }
     .showcase .video-container {
@@ -419,8 +421,8 @@ footer {
         top: 0px;
         left: 0px; }
     .showcase .ediciones {
-      width: auto;
-      margin: 0px 37%; }
+      margin: 1rem auto;
+      float: none; }
       .showcase .ediciones h5,
       .showcase .ediciones p {
         text-align: center; }
@@ -437,39 +439,43 @@ footer {
     .method li:nth-child(2n) {
       margin-left: 8.05672%; }
     .method li:before {
-      padding: 0 1rem; }
+      padding: .1rem 1rem; }
   .method h3 {
     margin-top: 0.5rem; }
   .method .moments p {
     margin: 0.8rem 0 5rem; }
 
+  /* SPONSORS AND FOOTER */
   .sponsors ul {
     padding-left: 0; }
+
+  footer .container, footer .properties, footer .method, footer .contact-us, footer .nav-accesible {
+    text-align: center; }
 
   .badges {
     float: center;
     text-align: center; }
 
   .logo-footer {
-    float: left;
-    display: block;
-    margin-right: 7.42297%;
-    width: 59.71639%;
-    margin-left: 21.48459%;
-    margin-top: 1rem; }
-    .logo-footer:last-child {
-      margin-right: 0; }
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    margin: 1.5rem 0 .5rem; }
 
   .social {
-    display: inline-block; } }
-@media screen and (min-width: 421px) and (max-width: 720px) {
+    margin-top: 1.5rem; } }
+@media screen and (min-width: 536px) and (max-width: 900px) {
   header .tagline {
     height: 3rem;
     line-height: 1.2rem;
     text-align: center;
     padding: .35rem 2.1rem;
     letter-spacing: .125rem;
-    /* float: left; */ }
+    /* 	  	@include media(max-width 820px) {
+    	  		padding: .35rem 5.1rem;
+    	  		float: center;
+    	  		font-size: 1rem;  
+    	  	} */ }
 
   /* LOGO */
   .logo-container {
@@ -479,9 +485,82 @@ footer {
     font-size: 1.5rem; }
 
   /* PROPERTIES */
-  .properties .reason
-  .reason:before {
-    position: absolute;
-    content: '';
-    background: url(../img/responsive-taller-icon-sprite.svg) top left;
-    background-repeat: no-repeat; } }
+  .properties .reason {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 61.56264%;
+    margin-left: 34.94305%; }
+    .properties .reason:last-child {
+      margin-right: 0; }
+  .properties .reason:nth-child(odd) {
+    margin-left: 5.24146%; }
+  .properties .reason:before {
+    background-repeat: no-repeat; }
+  .properties .reason-fly:before {
+    right: -10.125rem; }
+  .properties .reason-cc:before {
+    width: 12.812rem;
+    right: -11.125rem; }
+
+  /* SHOWCASE */
+  .showcase {
+    background-position: -6.37rem 29.62rem;
+    -webkit-background-size: 120%;
+    -o-background-size: 120%;
+    background-size: 120%; }
+    .showcase h4 {
+      text-align: center; }
+    .showcase .video-container {
+      width: 97%;
+      margin: auto; }
+    .showcase .video {
+      float: center;
+      height: 0px;
+      width: 100%;
+      padding-top: 56.25%;
+      position: relative; }
+      .showcase .video iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px; }
+    .showcase .ediciones {
+      float: none;
+      margin: 1rem auto; }
+
+  /* MOMENTS */
+  .method .moments {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 94.75854%; }
+    .method .moments:last-child {
+      margin-right: 0; }
+  .method li {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 42.34396%;
+    margin-left: 5.24146%; }
+    .method li:last-child {
+      margin-right: 0; }
+    .method li:nth-child(2n) {
+      margin-left: 5.24146%; }
+
+  /* SPONSORS AND FOOTER */
+  footer .container, footer .properties, footer .method, footer .contact-us, footer .nav-accesible {
+    text-align: center; }
+  footer .badges {
+    float: center;
+    text-align: center; }
+
+  .logo-footer {
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    margin: 1.5rem 0 .5rem; }
+
+  .social {
+    margin-top: 1.5rem; } }

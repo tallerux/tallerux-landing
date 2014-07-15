@@ -1,4 +1,4 @@
-$portrait: new-breakpoint(min-width 421px max-width 720px, 6);
+$portrait: new-breakpoint(min-width 536px max-width 900px, 6);
 @mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
 		background-position: $pos-left $pos-top;
 		width: $width;
@@ -14,7 +14,12 @@ $portrait: new-breakpoint(min-width 421px max-width 720px, 6);
 	  	text-align: center;
 	  	padding: .35rem 2.1rem;
 	  	letter-spacing: .125rem;
-	  	/* float: left; */
+	  	
+/* 	  	@include media(max-width 820px) {
+	  		padding: .35rem 5.1rem;
+	  		float: center;
+	  		font-size: 1rem;  
+	  	} */
 	  	
 	  }
 	}
@@ -30,12 +35,101 @@ $portrait: new-breakpoint(min-width 421px max-width 720px, 6);
 
 	/* PROPERTIES */
 	.properties {
-		.reason
+		.reason {
+			@include span-columns(3.8 of 6);
+			@include shift(2);
+		}
+
+		.reason:nth-child(odd) {
+			@include shift(.3);
+		}
 		.reason:before {
-				 position: absolute;
-				 content:'';
-				 background: url(../img/responsive-taller-icon-sprite.svg) top left;
-				 background-repeat: no-repeat;
+			background-repeat: no-repeat;
+		}
+
+		.reason-fly:before {
+			right: -10.125rem;
+		}
+
+		.reason-cc:before {
+			width: 12.812rem;
+			right: -11.125rem;
+		}
+	}
+
+	/* SHOWCASE */
+	.showcase {
+		background-position: -6.37rem 29.62rem;
+		-webkit-background-size: 120%;
+		-o-background-size: 120%; 
+		background-size: 120%; 
+	
+		h4 {
+			text-align:center;
+		}
+
+		.video-container{
+				width: 97%;
+				margin:auto;
+		}
+
+		.video {
+			float: center;
+			height: 0px;
+			width: 100%;
+			padding-top: 56.25%;
+			position: relative;
+			
+			iframe {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left: 0px;
 			}
 		}
+
+		.ediciones {
+			float:none;
+			margin: 1rem auto;
+		}
+	}
+
+	/* MOMENTS */
+	.method {
+		.moments {
+			@include span-columns(5.7 of 6);
+		}
+
+		li {
+			@include span-columns(2.7);
+			@include shift(.3);
+			
+			&:nth-child(2n) {
+				@include shift(.3);
+			}
+		}
+	}
+	
+	/* SPONSORS AND FOOTER */
+	footer {
+		.container {
+			text-align: center; 
+		}
+
+		.badges {
+			float: center;
+			text-align: center; 
+		}
+	}
+
+	.logo-footer {
+		text-align: center;
+		width: 100%;
+		background-position: center;
+		margin: 1.5rem 0 .5rem;
+	}
+
+	.social {
+		margin-top: 1.5rem;	}
 }
