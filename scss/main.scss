@@ -17,7 +17,7 @@ $grey: #676566;
 html{
     font: 1em/1.5 "source-sans-pro", sans-serif;
     font-weight: 200;
-    color: $black;
+    color: $black; 
 }
 
 header {
@@ -443,3 +443,4 @@ footer {
 }
 
 @import "mobile";
+@import "portrait";

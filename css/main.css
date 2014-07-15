@@ -340,8 +340,8 @@ footer {
     text-align: center; }
 
   .lead {
-    font-size: 1.5rem;
-    padding: 9%; }
+    font-size: 1.3rem;
+    padding: 2%; }
 
   /* PROPERTIES */
   .properties .reason {
@@ -462,3 +462,26 @@ footer {
 
   .social {
     display: inline-block; } }
+@media screen and (min-width: 421px) and (max-width: 720px) {
+  header .tagline {
+    height: 3rem;
+    line-height: 1.2rem;
+    text-align: center;
+    padding: .35rem 2.1rem;
+    letter-spacing: .125rem;
+    /* float: left; */ }
+
+  /* LOGO */
+  .logo-container {
+    text-align: center; }
+
+  .lead {
+    font-size: 1.5rem; }
+
+  /* PROPERTIES */
+  .properties .reason
+  .reason:before {
+    position: absolute;
+    content: '';
+    background: url(../img/responsive-taller-icon-sprite.svg) top left;
+    background-repeat: no-repeat; } }
