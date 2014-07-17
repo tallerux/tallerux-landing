@@ -1,4 +1,4 @@
-$mobile: new-breakpoint(max-width 535px 4);
+$mobile: new-breakpoint(max-width 530px 4);
 @mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
 		background-position: $pos-left $pos-top;
 		width: $width;
@@ -7,30 +7,6 @@ $mobile: new-breakpoint(max-width 535px 4);
 	}
 @include media($mobile){
 
-	header{
-		.tagline {
-			height: 3rem;
-			line-height: 1.2rem;
-			text-align: center;
-			padding:.35rem 0 0 0;
-			letter-spacing: .125rem;
-			}
-	}
-
-	span {
-		margin: 0 3%;
-	}
-
-	/* LOGO */
-	.logo-container {
-		text-align: center;
-		}
-
-	.lead {
-		font-size: 1.3rem;
-		padding: 2%;
-	}
-
 	/* PROPERTIES */
 	.properties {
 		.reason {
@@ -38,10 +14,10 @@ $mobile: new-breakpoint(max-width 535px 4);
 			@include shift(1);
 			@include span-columns(3.5 of 4);
 
-			p {
-				font-size: 1.18rem;
-				/* margin-right: 2%; */
-				}		
+			/* p {
+				font-size: 1.2em;
+				/* margin-right: 2%;
+				} */		
 			}
 
 		.reason:first-of-type {
@@ -92,47 +68,13 @@ $mobile: new-breakpoint(max-width 535px 4);
 
 	/* SHOWCASE */
 	.showcase {
-		background-position: -8.93rem 23.93rem;
-		-webkit-background-size: 155%; 
-		-o-background-size: 155%; 
-		background-size: 155%; 
-
+		
 		h4 {
 			text-align: center;
 		}
-
-		.video-container{
-			width: 97%;
-			margin:auto;
-		}
-
-		.video {
-			float: center;
-			height: 0px;
-			width: 100%;
-			padding-top: 56.25%;
-			position: relative;
-			
-			iframe {
-				position: absolute;
-				height: 100%;
-				width: 100%;
-				top: 0px;
-				left: 0px;
-			}
-		}
-
-		.ediciones {
-			margin: 1rem auto;
-			float: none;
-			
-			
-			h5,
-			p {
-				text-align: center;
-			}
-		}
 	}
+	
+	/* video adaptativo hasta 715 al final */
 	
 	/* MOMENTS */
 	.method {
@@ -146,7 +88,7 @@ $mobile: new-breakpoint(max-width 535px 4);
 				}
 
 				&:before {
-					padding: .1rem 1rem;					
+					padding: .2rem 1rem;					
 				}
 		}
 
@@ -163,14 +105,90 @@ $mobile: new-breakpoint(max-width 535px 4);
 	.sponsors ul {
 		padding-left: 0; 
 	}
-	
-	footer .container {
-		text-align:center;
+}
+
+
+/* VIDEO */
+@include media(max-width 741px) {
+	header{
+		.tagline {
+			height: 10%;
+			line-height: 1.2rem;
+			text-align: center;
+			width: 100%; 
+			padding: .35rem 2% 0;
+			letter-spacing: .125rem;
+		}
 	}
 
-	.badges {
-		float: center;
+	span {
+		margin: 0 3%;
+	}
+
+	.lead {
+		font-size: 1.3rem;
+		padding: 2%;
+	}
+
+	/* LOGO */
+	.logo-container {
 		text-align: center;
+		}
+
+	/* PROPERTIES */
+	.properties p,
+	.method .moments p {
+		font-size: 1.2em;
+	}
+
+	.showcase {
+			background-position: -3.93rem 26.93rem;
+			-webkit-background-size: 120%; 
+			-o-background-size: 120%; 
+			background-size: 120%; 
+
+			.video-container{
+				width: 97%;
+				margin:auto;
+			}
+
+ 		.video {
+			float: center;
+			height: 0px;
+			width: 100%;
+			padding-top: 56.25%;
+			position: relative;
+
+			iframe {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		
+		.ediciones {
+			margin: 1rem auto;
+			float: none;
+			
+			h5,
+			p {
+				text-align: center;
+			}
+		}
+	}
+
+	/* FOOTER */
+	footer {
+		.container {
+			text-align:center;
+		}
+
+		.badges {
+			float: none;
+			text-align: center;
+		}
 	}
 
 	.logo-footer {
@@ -181,6 +199,8 @@ $mobile: new-breakpoint(max-width 535px 4);
 	}
 
 	.social {
-		margin-top: 1.5rem;	}
-
+		margin-top: 1.5rem;
+		width: 100%;
+		clear: left;
+	}
 }

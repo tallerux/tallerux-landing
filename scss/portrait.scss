@@ -1,26 +1,25 @@
-$portrait: new-breakpoint(min-width 536px max-width 900px, 6);
+/*A partir de éste punto existen 2 breakpoint principal dentro
+del rango de 531px a 900px */
+
+$portrait: new-breakpoint(min-width 531px max-width 900px, 6);
+$large-portrait: new-breakpoint(min-width 742px max-width 900px, 6);
+
 @mixin sprite-position($pos-left, $pos-top, $width, $height, $top){
-		background-position: $pos-left $pos-top;
-		width: $width;
-		height: $height;
-		top: $top;
-	}
+	background-position: $pos-left $pos-top;
+	width: $width;
+	height: $height;
+	top: $top;
+}
+
 
 @include media($portrait){
 	header {
 	  .tagline {
-	  	height: 3rem;
+	  	height: 10%;
 	  	line-height: 1.2rem;
 	  	text-align: center;
-	  	padding: .35rem 2.1rem;
-	  	letter-spacing: .125rem;
-	  	
-/* 	  	@include media(max-width 820px) {
-	  		padding: .35rem 5.1rem;
-	  		float: center;
-	  		font-size: 1rem;  
-	  	} */
-	  	
+	  	padding: .35rem 10%;
+	  	letter-spacing: .125rem;  	
 	  }
 	}
 
@@ -30,7 +29,9 @@ $portrait: new-breakpoint(min-width 536px max-width 900px, 6);
 	}
 
 	.lead {
-		font-size: 1.5rem;
+		font-size: 1.4em;
+		margin: 5rem 2% auto 2%;
+		
 	}
 
 	/* PROPERTIES */
@@ -53,45 +54,14 @@ $portrait: new-breakpoint(min-width 536px max-width 900px, 6);
 
 		.reason-cc:before {
 			width: 12.812rem;
-			right: -11.125rem;
+			right: -11rem;
 		}
 	}
 
 	/* SHOWCASE */
 	.showcase {
-		background-position: -6.37rem 29.62rem;
-		-webkit-background-size: 120%;
-		-o-background-size: 120%; 
-		background-size: 120%; 
-	
 		h4 {
 			text-align:center;
-		}
-
-		.video-container{
-				width: 97%;
-				margin:auto;
-		}
-
-		.video {
-			float: center;
-			height: 0px;
-			width: 100%;
-			padding-top: 56.25%;
-			position: relative;
-			
-			iframe {
-				position: absolute;
-				height: 100%;
-				width: 100%;
-				top: 0px;
-				left: 0px;
-			}
-		}
-
-		.ediciones {
-			float:none;
-			margin: 1rem auto;
 		}
 	}
 
@@ -99,7 +69,8 @@ $portrait: new-breakpoint(min-width 536px max-width 900px, 6);
 	.method {
 		.moments {
 			@include span-columns(5.7 of 6);
-		}
+			margin-top: 5rem; 
+			}
 
 		li {
 			@include span-columns(2.7);
@@ -108,28 +79,37 @@ $portrait: new-breakpoint(min-width 536px max-width 900px, 6);
 			&:nth-child(2n) {
 				@include shift(.3);
 			}
+
+			&:before {
+				padding: .2rem 1rem;
+			}		
 		}
 	}
 	
 	/* SPONSORS AND FOOTER */
-	footer {
-		.container {
-			text-align: center; 
+ 	footer {
+		.social {
+			clear: left;
+		}
+	}
+}
+
+
+@include media($large-portrait){
+	header {
+		.tagline {
+			height: 2rem;
+			font-size: .8em;
+			padding: .35rem 0;
+			margin: 4em 0 0; 
 		}
 
-		.badges {
-			float: center;
-			text-align: center; 
+		.lead {
+			margin: 10rem auto 5rem;
 		}
 	}
 
-	.logo-footer {
-		text-align: center;
-		width: 100%;
-		background-position: center;
-		margin: 1.5rem 0 .5rem;
+	.logo {
+		float: left;
 	}
-
-	.social {
-		margin-top: 1.5rem;	}
 }
