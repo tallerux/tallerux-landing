@@ -29,7 +29,7 @@ $large-portrait: new-breakpoint(min-width 742px max-width 900px, 6);
 	}
 
 	.lead {
-		font-size: 1.4em;
+		font-size: 1.5em;
 		margin: 5rem 2% auto 2%;
 		
 	}
@@ -83,6 +83,10 @@ $large-portrait: new-breakpoint(min-width 742px max-width 900px, 6);
 			&:before {
 				padding: .2rem 1rem;
 			}		
+		}
+
+		h2 {
+			margin-bottom: 3%;
 		}
 	}
 	

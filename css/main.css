@@ -399,6 +399,8 @@ footer {
       margin-left: 8.05672%; }
     .method li:before {
       padding: .2rem 1rem; }
+  .method h2 {
+    margin-bottom: 3%; }
   .method h3 {
     margin-top: 0.5rem; }
   .method .moments p {
@@ -492,7 +494,7 @@ del rango de 531px a 900px */
     text-align: center; }
 
   .lead {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: 5rem 2% auto 2%; }
 
   /* PROPERTIES */
@@ -539,6 +541,8 @@ del rango de 531px a 900px */
       margin-left: 5.24146%; }
     .method li:before {
       padding: .2rem 1rem; }
+  .method h2 {
+    margin-bottom: 3%; }
 
   /* SPONSORS AND FOOTER */
   footer .social {
