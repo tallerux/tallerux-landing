@@ -18,6 +18,9 @@ header{
 
 
 /*MENU*/
+#menu .button {
+  font-size: .7rem; 
+}
 
 /*GOALS*/
 .goals{
@@ -152,8 +155,12 @@ footer {
   height: 21.67rem;
 }
 
-.badges a {
-  margin: 1rem 3.2rem;
+.badges {
+  text-align: center; 
+
+   a {
+     margin: 1rem 3.2rem;
+  }
 }
 
 .logo-ixda {

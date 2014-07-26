@@ -1,4 +1,4 @@
-@import url(../../lib/normalize-css/normalize.css);
+@import "http://www.tallerux.com.ar/lib/normalize-css/normalize.css";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

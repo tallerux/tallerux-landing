@@ -116,4 +116,8 @@ $large-portrait: new-breakpoint(min-width 742px max-width 900px, 6);
 	.logo {
 		float: left;
 	}
+
+	.showcase h4 {
+		text-align: left; 
+	}
 }

@@ -1,6 +1,6 @@
 @import "../../lib/bower-bourbon/bourbon";
 @import "../../lib/bower-neat/neat";
-@import "../../lib/normalize-css/normalize.css";
+@import "http://www.tallerux.com.ar/lib/normalize-css/normalize.css";
 
 
 /* GENERAL STYLES */
@@ -144,6 +144,7 @@ $border-box-sizing: false;
 
   h2{
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    color: white;
   }
 }
 

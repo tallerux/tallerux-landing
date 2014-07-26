@@ -1,4 +1,4 @@
-@import url(../../lib/normalize-css/normalize.css);
+@import "http://www.tallerux.com.ar/lib/normalize-css/normalize.css";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -123,7 +123,8 @@ ul, a {
   .goals .our {
     padding: 1.7rem; }
   .goals h2 {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: white; }
 
 .goals div p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -355,6 +356,9 @@ footer {
     margin: 0 5%; }
 
   /*MENU*/
+  #menu .button {
+    font-size: .7rem; }
+
   /*GOALS*/
   .goals {
     height: 465px;
@@ -466,8 +470,10 @@ footer {
     padding-top: 1.2rem;
     height: 21.67rem; }
 
-  .badges a {
-    margin: 1rem 3.2rem; }
+  .badges {
+    text-align: center; }
+    .badges a {
+      margin: 1rem 3.2rem; }
 
   .logo-ixda {
     float: center; }

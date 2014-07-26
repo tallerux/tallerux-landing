@@ -156,9 +156,11 @@ strong {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    padding-left: 1%; }
   .showcase .video {
-    float: left; }
+    float: left;
+    padding-left: 1%; }
   .showcase .ediciones {
     float: left;
     width: 110px;
@@ -557,4 +559,7 @@ del rango de 531px a 900px */
     margin: 10rem auto 5rem; }
 
   .logo {
-    float: left; } }
+    float: left; }
+
+  .showcase h4 {
+    text-align: left; } }
