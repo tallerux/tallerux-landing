@@ -9,6 +9,12 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  *::selection {
+    background: #e8411a;
+    color: #fff; }
+  *::-moz-selection {
+    background: #e8411a;
+    color: #fff; }
 
 html {
   font: 18px/1.2 "Roboto", sans-serif;
@@ -228,6 +234,14 @@ ul, a {
 .projects .title-section,
 .projects p {
   color: #fff; }
+  .projects .title-section::selection,
+  .projects p::selection {
+    background: #FFF;
+    color: #E81E25; }
+  .projects .title-section::-moz-selection,
+  .projects p::-moz-selection {
+    background: #FFF;
+    color: #E81E25; }
 
 .project-container {
   float: left;
@@ -247,11 +261,16 @@ ul, a {
   width: 12.06rem;
   height: 5.81rem; }
 
-.project-container .taller-ux {
+.project-container .taller-ux, .project-container .project-ci {
   text-indent: -9999px;
   background: url(../img/tallerux_logo.png) no-repeat center center;
   display: inline-block;
-  background-size: contain; }
+  background-size: 95%; }
+.project-container .project-ci {
+  background: url(../img/congreso-interactivo.svg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%; }
 
 /* PARTNERS */
 .partners {
